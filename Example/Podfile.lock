@@ -1,0 +1,16 @@
+PODS:
+  - SendKin (0.1.0)
+
+DEPENDENCIES:
+  - SendKin (from `../`)
+
+EXTERNAL SOURCES:
+  SendKin:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SendKin: 5041d41bf08e78969c1b9c61f8b5b80123a09ba0
+
+PODFILE CHECKSUM: a6e0903ad50a55c28dc8e6a365aa498b1b31efc2
+
+COCOAPODS: 1.7.1

@@ -1,0 +1,6 @@
+framework module Pods_send_kin_module_ios_Tests {
+  umbrella header "Pods-send-kin-module-ios_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

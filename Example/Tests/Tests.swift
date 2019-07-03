@@ -1,5 +1,5 @@
 import XCTest
-import send-kin-module-ios
+import SendKin
 
 class Tests: XCTestCase {
     

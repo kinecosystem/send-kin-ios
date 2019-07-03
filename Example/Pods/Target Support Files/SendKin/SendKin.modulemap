@@ -1,0 +1,6 @@
+framework module SendKin {
+  umbrella header "SendKin-umbrella.h"
+
+  export *
+  module * { export * }
+}
