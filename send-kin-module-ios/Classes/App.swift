@@ -7,16 +7,20 @@
 
 import Foundation
 
-struct App: Codable {
+public struct App: Codable {
     struct Metadata: Codable {
         let appName: String
         let url: URL
         let iconURL: URL
+        let urlScheme: String = ""
+        let bundleId: String = ""
 
         enum CodingKeys: String, CodingKey {
             case appName = "app_name"
             case url = "app_url"
             case iconURL = "icon_url"
+            case urlScheme = "url_scheme"
+            case bundleId = "bundle_id"
         }
     }
 
@@ -43,9 +47,22 @@ struct App: Codable {
     }
 }
 
-
 extension App: Equatable {
-    static func ==(lhs: App, rhs: App) -> Bool {
+    public static func ==(lhs: App, rhs: App) -> Bool {
         return lhs.identifier == rhs.identifier
+    }
+}
+
+extension App {
+    var urlScheme: String {
+        return "sendkin-receiver" //metadata.urlScheme
+    }
+
+    var bundleId: String {
+        return "org.kinecosystem.kinReceiver" //metadata.bundleId
+    }
+
+    var name: String {
+        return metadata.appName
     }
 }

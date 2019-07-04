@@ -13,6 +13,28 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        KinSendModule.show()
+        setupSendKin()
+    }
+
+    func setupSendKin() {
+        let button = UIButton(type: .system)
+        button.setTitle("Transfer Kin", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(startSendKin), for: .primaryActionTriggered)
+        view.addSubview(button)
+        view.centerXAnchor.constraint(equalTo: button.centerXAnchor).isActive = true
+        view.centerYAnchor.constraint(equalTo: button.centerYAnchor).isActive = true
+    }
+
+    @objc func startSendKin() {
+        KinSendModule.start(with: self)
+    }
+}
+
+extension ViewController: SendKinFlowDelegate {
+    func sendKin(amount: UInt, to address: String, app: App, completion: @escaping (Bool) -> Void) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            completion(true)
+        }
     }
 }

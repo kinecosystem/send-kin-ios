@@ -7,43 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0836560C3FE45694FA3DA4710E4EDF79 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80156A9EA66C4DF7196F5BA11E0370B8 /* App.swift */; };
-		08F02788151FB889A4EFD92E718CAEE0 /* Sailec.otf in Resources */ = {isa = PBXBuildFile; fileRef = D4C424F50A2CC7D88F210DCF1EE2B0F7 /* Sailec.otf */; };
-		20C2AB6B3318C2CF957B3856874740ED /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44D9006482BC238881E2AFD554BDC9 /* ImageLoader.swift */; };
-		29C5F99674CE7C579B617AECBE09EC0B /* Pods-send-kin-module-ios_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0129ADFE71261B1BD091071F4223EA /* Pods-send-kin-module-ios_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E19D580CB84977E9C42D614C1A8A0A6 /* SendKin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A74C206B1CA38D3ED9E8D35CFD77595D /* SendKin.bundle */; };
-		3938767549F524AA9FEF158A8B9B7580 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		5894DEE037063F71B74DC310E6883913 /* SendKin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A76F58FCD0A57A42A3E96A5236C49F64 /* SendKin-dummy.m */; };
-		5A805AC9B2D1C859E2BADD19C16DBDDC /* KinUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E336D470FD47EFF5C04266603371FCF /* KinUI.swift */; };
-		5B41BCEFE4D2BCB5D52CCDD96B519045 /* Pods-send-kin-module-ios_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5469D40D723BA38BB74F0EE93CF0471E /* Pods-send-kin-module-ios_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A262AA88DA85F0FCC76AF81E363A02D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		712B60E30E8E08EA35419D3608E94D1F /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB810AE1B061F6404C5B5F0A97065B /* AppCell.swift */; };
-		8D8188685A99A654E30ACDFC61617A55 /* AppListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8605F40A7527204424C9D4D22C87FE /* AppListViewController.swift */; };
-		9155CEA822CB9C7400A439E4 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155CEA622CB9C6B00A439E4 /* UILabel+Extensions.swift */; };
-		9C6F4DF425988EFC375AA12637BF2CAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9E2EBCE8425C794BC19D2C483CB2B520 /* AppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B213592743F49BD961CCC371CDBEE /* AppsController.swift */; };
-		A19459F44648DC62DBB73C84775BF2BC /* Sailec-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 230D65B6FF4D9658AB911DE33E66A7DA /* Sailec-Medium.otf */; };
-		C841372F8A50AAF7DD6A194E1391D3DA /* Pods-send-kin-module-ios_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1AE77943AC3344C1822761D4226EDC /* Pods-send-kin-module-ios_Example-dummy.m */; };
-		DBDBE347CCAC19933FAEA7BF9186460A /* Pods-send-kin-module-ios_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3777CB07EB5B6B6C229E20A251C4B97E /* Pods-send-kin-module-ios_Tests-dummy.m */; };
-		E05C3E886F659E8B133B414D58C98EEA /* SendKin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FCB9730234D375298C2F7D22CEE74E2 /* SendKin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18467AAC16B9B35AFFDB728D34D8F3C1 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67B6E108C939951B3210B6A80818706 /* UILabel+Extensions.swift */; };
+		2AC795C41BFCA0859CF06D5C73ABDC28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		466E1482AC5948C51B83813E0CAA2319 /* Pods-SendKin-Sender-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD54B9D7A693448EFE8AFE3CD992502 /* Pods-SendKin-Sender-dummy.m */; };
+		4B5BC9C1E3EE5CD64F558FB46BE38A0A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340FBAF19E97FA2E599C613A985C5D8 /* ImageLoader.swift */; };
+		54C3288315345CC245C3AF43395D5697 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		554565356CA7BD97572CA5D78DB7726F /* GetAddressFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D345A0D616E5C143D1D143E7210B00 /* GetAddressFlow.swift */; };
+		6B1827A4B5285CD4FB192A320C6EBDD5 /* Pods-SendKin-Sender-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E57409E3F1ED2CC6C64F20B0B19B757B /* Pods-SendKin-Sender-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C23013A2BACBA10922E8051768777C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8E5579E72D307D5CAB1B77F556511FB9 /* SendKin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C719CA7F0AF14C7C0CC5ECD444E0E2A /* SendKin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F0E62E28928ED95B04BDBF402F2A51D /* LaunchURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC81E6CDECD72B680305E4ACE91B86E /* LaunchURLBuilder.swift */; };
+		93C690AA82C95B2F45F2030EBCB485A3 /* Pods-send-kin-module-ios_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D31BC81861063806FF11EA0C3C63D07 /* Pods-send-kin-module-ios_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		993B56AF6F8FD9A86BC47BF09E00F693 /* SendKin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A74C206B1CA38D3ED9E8D35CFD77595D /* SendKin.bundle */; };
+		9A2DCCB382C2134CAC108CE888821706 /* AppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E8BB6FA376D9D7EBBB38793E539E02 /* AppsController.swift */; };
+		A922EE87E1B2DEBD881883F4BF75592C /* Sailec-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C2319A6C9BC63A3C7CECC6B8D29C8A5 /* Sailec-Medium.otf */; };
+		BF0D45C1571E3FDF99592636FE7F8644 /* AppListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA44FF82B62A50DDAB2C080ED5E2080 /* AppListViewController.swift */; };
+		CBF93134C9913A9F1A0195237DD44ED9 /* KinUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B667C42FB664FD6E162A41AFB32F6869 /* KinUI.swift */; };
+		D9D993CBDD24320BEECDC412910AB998 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C8087612711DD00EC8E66747694E0 /* App.swift */; };
+		DE89FFFE7F4817A0A01A22B49E7AF124 /* Pods-send-kin-module-ios_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 971200427D92D80630EE52311EEC9CCB /* Pods-send-kin-module-ios_Tests-dummy.m */; };
+		E174C36DE17C533F98AB620123660408 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08859AEC45A3FA8A500A036172E28E69 /* Constants.swift */; };
+		E8405C7C19D84B35D21B6AA79F960E4B /* SendKinTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C242A60B8FDDE20BD15A2B57B13E4 /* SendKinTypes.swift */; };
+		EBCA69C21B84E753328EACBFE2F9141E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F155C6D340B4BB0F43F2CC979CC32C21 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1ED108C230FE59B3A58B73064F4DA1 /* Bundle+Extensions.swift */; };
+		FA3E136D6FFEF057365FF2AEA29309F3 /* Pods-SendKin-Receiver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D93899A02B9E374FFAC0D0D9006B082 /* Pods-SendKin-Receiver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAB6CDC3FD2D1DEBE11847C13597AF78 /* Sailec.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33E982FE6EFAC7D9C3F89AFCA808036A /* Sailec.otf */; };
+		FB1527D8DBECD7BA26403CB6D1371540 /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0605605BF7BAF9A5B1AE7FC3F873335 /* AppCell.swift */; };
+		FDAA710EB755E018439D5659FBF06C1D /* Pods-SendKin-Receiver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE1EC96B0DABAADB104FCB6980986A9 /* Pods-SendKin-Receiver-dummy.m */; };
+		FDF129824ADB5CF5B1FFB7BE2BC1F965 /* SendKin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C334BC8E70D6A98547099CAFD28D2AAC /* SendKin-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		62FDFA5E72A98C5D48E4E923E80283E2 /* PBXContainerItemProxy */ = {
+		1DD4F31FA632F6DEFAD1A3BA5DEF5718 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D651EB1691100FD1EEA7D4C2CC509CA1;
-			remoteInfo = "Pods-send-kin-module-ios_Example";
+			remoteGlobalIDString = E52FE53807EFBE381F512A8E28AD6024;
+			remoteInfo = SendKin;
 		};
-		B5B38D3013E47D1D98745775BCA1CD2D /* PBXContainerItemProxy */ = {
+		46CFB0F88E54E48ED9EF0B4A029B5601 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 71E3AC17D3210DCC6C46D83D2E0DC6AE;
 			remoteInfo = "SendKin-SendKin";
 		};
-		B8FD2504828F464717E4441E78754631 /* PBXContainerItemProxy */ = {
+		991B79D1E1FAE7CFB2A000AFCE90AF11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E52FE53807EFBE381F512A8E28AD6024;
+			remoteInfo = SendKin;
+		};
+		DD82E6994980B91AA0606427A7DC0625 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -53,178 +68,186 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08C80536AC5B11399579CC90AEFB0D2A /* SendKin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SendKin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D8342634F008ACE719B6E7754888C22 /* Pods-send-kin-module-ios_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-send-kin-module-ios_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2132FED5E1DF64A5701AB5E78720CF2A /* Pods_send_kin_module_ios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_send_kin_module_ios_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22026999D089425BDA16E9F0593F9364 /* Pods-send-kin-module-ios_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-send-kin-module-ios_Tests.modulemap"; sourceTree = "<group>"; };
-		22E2467CA7FC59A21AF57001D7A23E22 /* ResourceBundle-SendKin-SendKin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SendKin-SendKin-Info.plist"; sourceTree = "<group>"; };
-		230D65B6FF4D9658AB911DE33E66A7DA /* Sailec-Medium.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Sailec-Medium.otf"; path = "send-kin-module-ios/Assets/Sailec-Medium.otf"; sourceTree = "<group>"; };
-		24AE28EAB7FF8446473EB103A4C5B1F5 /* SendKin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SendKin-Info.plist"; sourceTree = "<group>"; };
-		2D57936F204A0CA6957D2377227EA895 /* Pods-send-kin-module-ios_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-send-kin-module-ios_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		309B213592743F49BD961CCC371CDBEE /* AppsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppsController.swift; path = "send-kin-module-ios/Classes/AppsController.swift"; sourceTree = "<group>"; };
+		071564CDF46BA239CFC88557EE7C51AD /* Pods-SendKin-Receiver-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SendKin-Receiver-frameworks.sh"; sourceTree = "<group>"; };
+		08859AEC45A3FA8A500A036172E28E69 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "send-kin-module-ios/Classes/Constants.swift"; sourceTree = "<group>"; };
+		08C80536AC5B11399579CC90AEFB0D2A /* SendKin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SendKin.framework; path = SendKin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		094D770E793898A977E12B0242A66B98 /* SendKin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SendKin.xcconfig; sourceTree = "<group>"; };
+		0AE1EC96B0DABAADB104FCB6980986A9 /* Pods-SendKin-Receiver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SendKin-Receiver-dummy.m"; sourceTree = "<group>"; };
+		0C719CA7F0AF14C7C0CC5ECD444E0E2A /* SendKin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SendKin-umbrella.h"; sourceTree = "<group>"; };
+		0CCAF4E11629C6ED183B43D157E69D5C /* Pods-SendKin-Sender-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendKin-Sender-acknowledgements.plist"; sourceTree = "<group>"; };
+		0FA4F9505DF3A5AECADBFF2015383476 /* Pods_SendKin_Receiver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SendKin_Receiver.framework; path = "Pods-SendKin-Receiver.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1340FBAF19E97FA2E599C613A985C5D8 /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = "send-kin-module-ios/Classes/ImageLoader.swift"; sourceTree = "<group>"; };
+		1DA44FF82B62A50DDAB2C080ED5E2080 /* AppListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppListViewController.swift; path = "send-kin-module-ios/Classes/AppListViewController.swift"; sourceTree = "<group>"; };
+		1DD54B9D7A693448EFE8AFE3CD992502 /* Pods-SendKin-Sender-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SendKin-Sender-dummy.m"; sourceTree = "<group>"; };
+		2A8FACC42A0A4F0005E0A516A424AAD5 /* Pods-send-kin-module-ios_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-send-kin-module-ios_Tests-Info.plist"; sourceTree = "<group>"; };
+		2C2319A6C9BC63A3C7CECC6B8D29C8A5 /* Sailec-Medium.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Sailec-Medium.otf"; path = "send-kin-module-ios/Assets/Sailec-Medium.otf"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3777CB07EB5B6B6C229E20A251C4B97E /* Pods-send-kin-module-ios_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-send-kin-module-ios_Tests-dummy.m"; sourceTree = "<group>"; };
-		5469D40D723BA38BB74F0EE93CF0471E /* Pods-send-kin-module-ios_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-send-kin-module-ios_Tests-umbrella.h"; sourceTree = "<group>"; };
-		561E83DBCB7873C60886A76448EEAA5E /* Pods-send-kin-module-ios_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-send-kin-module-ios_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5EDEF0819ADEBC4F6827CB6FFDA4CC2B /* SendKin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SendKin.modulemap; sourceTree = "<group>"; };
-		61DB92A5074C35060E3D657D0F2DFC71 /* SendKin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SendKin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6292720E5A1145515131CFBEED35F406 /* Pods-send-kin-module-ios_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-send-kin-module-ios_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		64AD95EE48601E324F75DFF25FD35804 /* SendKin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SendKin-prefix.pch"; sourceTree = "<group>"; };
-		6B44D9006482BC238881E2AFD554BDC9 /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = "send-kin-module-ios/Classes/ImageLoader.swift"; sourceTree = "<group>"; };
-		6FCB9730234D375298C2F7D22CEE74E2 /* SendKin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SendKin-umbrella.h"; sourceTree = "<group>"; };
-		7E1AE77943AC3344C1822761D4226EDC /* Pods-send-kin-module-ios_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-send-kin-module-ios_Example-dummy.m"; sourceTree = "<group>"; };
-		80156A9EA66C4DF7196F5BA11E0370B8 /* App.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = App.swift; path = "send-kin-module-ios/Classes/App.swift"; sourceTree = "<group>"; };
-		82A5426E5ABE2FCA7C935BB488F47098 /* Pods-send-kin-module-ios_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-send-kin-module-ios_Tests-Info.plist"; sourceTree = "<group>"; };
-		8BA52B0518FF79B1E093B2A83301FEB2 /* Pods-send-kin-module-ios_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-send-kin-module-ios_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		8E336D470FD47EFF5C04266603371FCF /* KinUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KinUI.swift; path = "send-kin-module-ios/Classes/KinUI.swift"; sourceTree = "<group>"; };
-		9155CEA622CB9C6B00A439E4 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILabel+Extensions.swift"; path = "send-kin-module-ios/Classes/UILabel+Extensions.swift"; sourceTree = "<group>"; };
-		97B7AED161F5A3D13ACF8165EAA25265 /* Pods-send-kin-module-ios_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-send-kin-module-ios_Example.modulemap"; sourceTree = "<group>"; };
-		9B163C2937081C102F4811ACF827963C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A142A5E57223710FDACE3C79BF8EB63B /* Pods-send-kin-module-ios_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-send-kin-module-ios_Example-frameworks.sh"; sourceTree = "<group>"; };
-		A16FDE45A6988315D5BF84151C5D2912 /* Pods_send_kin_module_ios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_send_kin_module_ios_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A56468A6E4D56EF3E8174D3C9B00536C /* Pods-send-kin-module-ios_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-send-kin-module-ios_Example-Info.plist"; sourceTree = "<group>"; };
-		A74C206B1CA38D3ED9E8D35CFD77595D /* SendKin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendKin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		A76F58FCD0A57A42A3E96A5236C49F64 /* SendKin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SendKin-dummy.m"; sourceTree = "<group>"; };
-		B1542710BF79606017CB744CF963213B /* SendKin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SendKin.xcconfig; sourceTree = "<group>"; };
-		C366B01852B4D08A92D579E5501667CB /* Pods-send-kin-module-ios_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-send-kin-module-ios_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CE7B59FE8BE9BDBB7AFC0012316B4113 /* Pods-send-kin-module-ios_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-send-kin-module-ios_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CE8605F40A7527204424C9D4D22C87FE /* AppListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppListViewController.swift; path = "send-kin-module-ios/Classes/AppListViewController.swift"; sourceTree = "<group>"; };
-		D4C424F50A2CC7D88F210DCF1EE2B0F7 /* Sailec.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = Sailec.otf; path = "send-kin-module-ios/Assets/Sailec.otf"; sourceTree = "<group>"; };
-		D989E224988600CC8389506F44A6F38F /* Pods-send-kin-module-ios_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-send-kin-module-ios_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DCBB810AE1B061F6404C5B5F0A97065B /* AppCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppCell.swift; path = "send-kin-module-ios/Classes/AppCell.swift"; sourceTree = "<group>"; };
-		E0050BCF8C3C76960211FA5AE6D3246B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		EC0129ADFE71261B1BD091071F4223EA /* Pods-send-kin-module-ios_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-send-kin-module-ios_Example-umbrella.h"; sourceTree = "<group>"; };
+		33E982FE6EFAC7D9C3F89AFCA808036A /* Sailec.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = Sailec.otf; path = "send-kin-module-ios/Assets/Sailec.otf"; sourceTree = "<group>"; };
+		42382FD7D3430516CB322374FEADB78E /* Pods-SendKin-Receiver-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendKin-Receiver-acknowledgements.plist"; sourceTree = "<group>"; };
+		460F20625CB59C3B3FA2C008FB546B39 /* Pods-send-kin-module-ios_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-send-kin-module-ios_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4D1C242A60B8FDDE20BD15A2B57B13E4 /* SendKinTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SendKinTypes.swift; path = "send-kin-module-ios/Classes/SendKinTypes.swift"; sourceTree = "<group>"; };
+		4E0E8859997C9EF4A6691F9806F107A9 /* Pods-SendKin-Sender-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SendKin-Sender-frameworks.sh"; sourceTree = "<group>"; };
+		4E951BE6269C79D66AA6887D32C03150 /* Pods-SendKin-Sender.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendKin-Sender.release.xcconfig"; sourceTree = "<group>"; };
+		6A7EA80D10A786C4F4294953421B7DE2 /* SendKin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SendKin-Info.plist"; sourceTree = "<group>"; };
+		6D93899A02B9E374FFAC0D0D9006B082 /* Pods-SendKin-Receiver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SendKin-Receiver-umbrella.h"; sourceTree = "<group>"; };
+		6F31F0EAEAD8482237AC46365D318A8B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7027678EDDE536323B376DE3FA496374 /* Pods-SendKin-Sender-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SendKin-Sender-acknowledgements.markdown"; sourceTree = "<group>"; };
+		75A32D2752CD6B2C473F086E72800C4F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7910EB17356A1187A983F67144013DA0 /* Pods-send-kin-module-ios_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-send-kin-module-ios_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		89B158E790148B0AA6C09E01AB5D37A6 /* Pods-SendKin-Receiver-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendKin-Receiver-Info.plist"; sourceTree = "<group>"; };
+		8C68B9D3571DDE7546F61FC107F9823A /* Pods-send-kin-module-ios_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-send-kin-module-ios_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8D31BC81861063806FF11EA0C3C63D07 /* Pods-send-kin-module-ios_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-send-kin-module-ios_Tests-umbrella.h"; sourceTree = "<group>"; };
+		971200427D92D80630EE52311EEC9CCB /* Pods-send-kin-module-ios_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-send-kin-module-ios_Tests-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E1ED108C230FE59B3A58B73064F4DA1 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extensions.swift"; path = "send-kin-module-ios/Classes/Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		A16FDE45A6988315D5BF84151C5D2912 /* Pods_send_kin_module_ios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_send_kin_module_ios_Tests.framework; path = "Pods-send-kin-module-ios_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74C206B1CA38D3ED9E8D35CFD77595D /* SendKin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SendKin.bundle; path = "SendKin-SendKin.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A61C720C7700E342372B7A01B80513 /* Pods-SendKin-Sender.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SendKin-Sender.modulemap"; sourceTree = "<group>"; };
+		AC23705639E281C25D26507EFB2CDF9B /* Pods-send-kin-module-ios_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-send-kin-module-ios_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE245D426E75180465F25E8BED2C0AB2 /* SendKin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SendKin.modulemap; sourceTree = "<group>"; };
+		AEF7F8DF3EF9C0C7711ACD534E53A135 /* Pods-SendKin-Receiver.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SendKin-Receiver.modulemap"; sourceTree = "<group>"; };
+		AFC81E6CDECD72B680305E4ACE91B86E /* LaunchURLBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LaunchURLBuilder.swift; path = "send-kin-module-ios/Classes/LaunchURLBuilder.swift"; sourceTree = "<group>"; };
+		B326F082771A95DF7119ABC68C589991 /* Pods-send-kin-module-ios_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-send-kin-module-ios_Tests.modulemap"; sourceTree = "<group>"; };
+		B667C42FB664FD6E162A41AFB32F6869 /* KinUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KinUI.swift; path = "send-kin-module-ios/Classes/KinUI.swift"; sourceTree = "<group>"; };
+		BEEBEFC5099FCA643383583842BBAA67 /* Pods-SendKin-Receiver-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SendKin-Receiver-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C0605605BF7BAF9A5B1AE7FC3F873335 /* AppCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppCell.swift; path = "send-kin-module-ios/Classes/AppCell.swift"; sourceTree = "<group>"; };
+		C323A772EEE9EEA48E3B9660EB46C29D /* Pods-SendKin-Sender-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SendKin-Sender-Info.plist"; sourceTree = "<group>"; };
+		C334BC8E70D6A98547099CAFD28D2AAC /* SendKin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SendKin-dummy.m"; sourceTree = "<group>"; };
+		C67B6E108C939951B3210B6A80818706 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Extensions.swift"; path = "send-kin-module-ios/Classes/UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		CB723963A1B04933E8567484AE605D9A /* Pods-SendKin-Receiver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendKin-Receiver.release.xcconfig"; sourceTree = "<group>"; };
+		CF8C8087612711DD00EC8E66747694E0 /* App.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = App.swift; path = "send-kin-module-ios/Classes/App.swift"; sourceTree = "<group>"; };
+		D33B17C767D4CA5AA5834B10CF4CB628 /* SendKin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SendKin-prefix.pch"; sourceTree = "<group>"; };
+		E266ADF316446D7322B9DC36659FB452 /* Pods_SendKin_Sender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SendKin_Sender.framework; path = "Pods-SendKin-Sender.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47A307570F719C68C79322C8F82A0D2 /* ResourceBundle-SendKin-SendKin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SendKin-SendKin-Info.plist"; sourceTree = "<group>"; };
+		E57409E3F1ED2CC6C64F20B0B19B757B /* Pods-SendKin-Sender-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SendKin-Sender-umbrella.h"; sourceTree = "<group>"; };
+		E5E909152BB93919DA3B6BFD52AFD310 /* Pods-SendKin-Sender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendKin-Sender.debug.xcconfig"; sourceTree = "<group>"; };
+		E7E8BB6FA376D9D7EBBB38793E539E02 /* AppsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppsController.swift; path = "send-kin-module-ios/Classes/AppsController.swift"; sourceTree = "<group>"; };
+		F1936541BF06CE0DC43A55B415471D04 /* SendKin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SendKin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F643F6CFB5FDC671B375D8448AFAF839 /* Pods-send-kin-module-ios_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-send-kin-module-ios_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		F8D345A0D616E5C143D1D143E7210B00 /* GetAddressFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GetAddressFlow.swift; path = "send-kin-module-ios/Classes/GetAddressFlow.swift"; sourceTree = "<group>"; };
+		FE8F09610259EF14731B740F8DE466D2 /* Pods-SendKin-Receiver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SendKin-Receiver.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4E066B5AA95A29F4A083DD19537FCE0F /* Frameworks */ = {
+		2DE4FC43E45F92AD24F7C1BE8644CDD4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3938767549F524AA9FEF158A8B9B7580 /* Foundation.framework in Frameworks */,
+				8C23013A2BACBA10922E8051768777C0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7952706D05617D868BFEF2559A549F1F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C6F4DF425988EFC375AA12637BF2CAD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7CF873AF58BE869D76AEEEAA44EA7A45 /* Frameworks */ = {
+		51EF582A560D56FFA784406DBA0A01C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBA11FC603081D15A041F9680B92792A /* Frameworks */ = {
+		59B4EDC142BAB92C2AE053A7647CB3FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A262AA88DA85F0FCC76AF81E363A02D /* Foundation.framework in Frameworks */,
+				EBCA69C21B84E753328EACBFE2F9141E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7624C07BCD77C0B808ACF7983688798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C3288315345CC245C3AF43395D5697 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7943F48884894D39538A347B834914 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC795C41BFCA0859CF06D5C73ABDC28 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1654B1CF9DD77A9DB61B65524C6EF5AB /* Pods-send-kin-module-ios_Example */ = {
+		0D1ED07FF65E31960C07218D3207BEB2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				97B7AED161F5A3D13ACF8165EAA25265 /* Pods-send-kin-module-ios_Example.modulemap */,
-				C366B01852B4D08A92D579E5501667CB /* Pods-send-kin-module-ios_Example-acknowledgements.markdown */,
-				8BA52B0518FF79B1E093B2A83301FEB2 /* Pods-send-kin-module-ios_Example-acknowledgements.plist */,
-				7E1AE77943AC3344C1822761D4226EDC /* Pods-send-kin-module-ios_Example-dummy.m */,
-				A142A5E57223710FDACE3C79BF8EB63B /* Pods-send-kin-module-ios_Example-frameworks.sh */,
-				A56468A6E4D56EF3E8174D3C9B00536C /* Pods-send-kin-module-ios_Example-Info.plist */,
-				EC0129ADFE71261B1BD091071F4223EA /* Pods-send-kin-module-ios_Example-umbrella.h */,
-				2D57936F204A0CA6957D2377227EA895 /* Pods-send-kin-module-ios_Example.debug.xcconfig */,
-				CE7B59FE8BE9BDBB7AFC0012316B4113 /* Pods-send-kin-module-ios_Example.release.xcconfig */,
+				FEF647B13320B8BE0EC055E709CF5CCF /* SendKin */,
 			);
-			name = "Pods-send-kin-module-ios_Example";
-			path = "Target Support Files/Pods-send-kin-module-ios_Example";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		45D9E27BFA6BBD350961D89B1A451314 /* Support Files */ = {
+		1DCADFB8E16269BE51A0221ECA1C0F21 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				22E2467CA7FC59A21AF57001D7A23E22 /* ResourceBundle-SendKin-SendKin-Info.plist */,
-				5EDEF0819ADEBC4F6827CB6FFDA4CC2B /* SendKin.modulemap */,
-				B1542710BF79606017CB744CF963213B /* SendKin.xcconfig */,
-				A76F58FCD0A57A42A3E96A5236C49F64 /* SendKin-dummy.m */,
-				24AE28EAB7FF8446473EB103A4C5B1F5 /* SendKin-Info.plist */,
-				64AD95EE48601E324F75DFF25FD35804 /* SendKin-prefix.pch */,
-				6FCB9730234D375298C2F7D22CEE74E2 /* SendKin-umbrella.h */,
+				E47A307570F719C68C79322C8F82A0D2 /* ResourceBundle-SendKin-SendKin-Info.plist */,
+				AE245D426E75180465F25E8BED2C0AB2 /* SendKin.modulemap */,
+				094D770E793898A977E12B0242A66B98 /* SendKin.xcconfig */,
+				C334BC8E70D6A98547099CAFD28D2AAC /* SendKin-dummy.m */,
+				6A7EA80D10A786C4F4294953421B7DE2 /* SendKin-Info.plist */,
+				D33B17C767D4CA5AA5834B10CF4CB628 /* SendKin-prefix.pch */,
+				0C719CA7F0AF14C7C0CC5ECD444E0E2A /* SendKin-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/SendKin";
 			sourceTree = "<group>";
 		};
-		49378C07A3471C34FA056B0A4A6BEAE2 /* Development Pods */ = {
+		3A4846298E00698274D544236F3142E5 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				83881AB9CA4158073A1778A14AD6E9AD /* SendKin */,
+				6F31F0EAEAD8482237AC46365D318A8B /* LICENSE */,
+				75A32D2752CD6B2C473F086E72800C4F /* README.md */,
+				F1936541BF06CE0DC43A55B415471D04 /* SendKin.podspec */,
 			);
-			name = "Development Pods";
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		4F624C2CA19B367EBD5376B8CF612980 /* Products */ = {
+		4042FE00F7543DF9EA1F56D59318E60A /* Pods-SendKin-Receiver */ = {
 			isa = PBXGroup;
 			children = (
-				2132FED5E1DF64A5701AB5E78720CF2A /* Pods_send_kin_module_ios_Example.framework */,
+				AEF7F8DF3EF9C0C7711ACD534E53A135 /* Pods-SendKin-Receiver.modulemap */,
+				BEEBEFC5099FCA643383583842BBAA67 /* Pods-SendKin-Receiver-acknowledgements.markdown */,
+				42382FD7D3430516CB322374FEADB78E /* Pods-SendKin-Receiver-acknowledgements.plist */,
+				0AE1EC96B0DABAADB104FCB6980986A9 /* Pods-SendKin-Receiver-dummy.m */,
+				071564CDF46BA239CFC88557EE7C51AD /* Pods-SendKin-Receiver-frameworks.sh */,
+				89B158E790148B0AA6C09E01AB5D37A6 /* Pods-SendKin-Receiver-Info.plist */,
+				6D93899A02B9E374FFAC0D0D9006B082 /* Pods-SendKin-Receiver-umbrella.h */,
+				FE8F09610259EF14731B740F8DE466D2 /* Pods-SendKin-Receiver.debug.xcconfig */,
+				CB723963A1B04933E8567484AE605D9A /* Pods-SendKin-Receiver.release.xcconfig */,
+			);
+			name = "Pods-SendKin-Receiver";
+			path = "Target Support Files/Pods-SendKin-Receiver";
+			sourceTree = "<group>";
+		};
+		4D47614BEF5D9EB3B90CC2170780645F /* Products */ = {
+			isa = PBXGroup;
+			children = (
 				A16FDE45A6988315D5BF84151C5D2912 /* Pods_send_kin_module_ios_Tests.framework */,
+				0FA4F9505DF3A5AECADBFF2015383476 /* Pods_SendKin_Receiver.framework */,
+				E266ADF316446D7322B9DC36659FB452 /* Pods_SendKin_Sender.framework */,
 				A74C206B1CA38D3ED9E8D35CFD77595D /* SendKin.bundle */,
 				08C80536AC5B11399579CC90AEFB0D2A /* SendKin.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7D51E3E2F96EF1485BA076F6D210EE04 /* Pods-send-kin-module-ios_Tests */ = {
+		9BEB8C0195FD4979B07EC09DB6B64EA4 /* Pods-SendKin-Sender */ = {
 			isa = PBXGroup;
 			children = (
-				22026999D089425BDA16E9F0593F9364 /* Pods-send-kin-module-ios_Tests.modulemap */,
-				1D8342634F008ACE719B6E7754888C22 /* Pods-send-kin-module-ios_Tests-acknowledgements.markdown */,
-				6292720E5A1145515131CFBEED35F406 /* Pods-send-kin-module-ios_Tests-acknowledgements.plist */,
-				3777CB07EB5B6B6C229E20A251C4B97E /* Pods-send-kin-module-ios_Tests-dummy.m */,
-				82A5426E5ABE2FCA7C935BB488F47098 /* Pods-send-kin-module-ios_Tests-Info.plist */,
-				5469D40D723BA38BB74F0EE93CF0471E /* Pods-send-kin-module-ios_Tests-umbrella.h */,
-				561E83DBCB7873C60886A76448EEAA5E /* Pods-send-kin-module-ios_Tests.debug.xcconfig */,
-				D989E224988600CC8389506F44A6F38F /* Pods-send-kin-module-ios_Tests.release.xcconfig */,
+				A9A61C720C7700E342372B7A01B80513 /* Pods-SendKin-Sender.modulemap */,
+				7027678EDDE536323B376DE3FA496374 /* Pods-SendKin-Sender-acknowledgements.markdown */,
+				0CCAF4E11629C6ED183B43D157E69D5C /* Pods-SendKin-Sender-acknowledgements.plist */,
+				1DD54B9D7A693448EFE8AFE3CD992502 /* Pods-SendKin-Sender-dummy.m */,
+				4E0E8859997C9EF4A6691F9806F107A9 /* Pods-SendKin-Sender-frameworks.sh */,
+				C323A772EEE9EEA48E3B9660EB46C29D /* Pods-SendKin-Sender-Info.plist */,
+				E57409E3F1ED2CC6C64F20B0B19B757B /* Pods-SendKin-Sender-umbrella.h */,
+				E5E909152BB93919DA3B6BFD52AFD310 /* Pods-SendKin-Sender.debug.xcconfig */,
+				4E951BE6269C79D66AA6887D32C03150 /* Pods-SendKin-Sender.release.xcconfig */,
 			);
-			name = "Pods-send-kin-module-ios_Tests";
-			path = "Target Support Files/Pods-send-kin-module-ios_Tests";
-			sourceTree = "<group>";
-		};
-		83881AB9CA4158073A1778A14AD6E9AD /* SendKin */ = {
-			isa = PBXGroup;
-			children = (
-				80156A9EA66C4DF7196F5BA11E0370B8 /* App.swift */,
-				DCBB810AE1B061F6404C5B5F0A97065B /* AppCell.swift */,
-				CE8605F40A7527204424C9D4D22C87FE /* AppListViewController.swift */,
-				309B213592743F49BD961CCC371CDBEE /* AppsController.swift */,
-				6B44D9006482BC238881E2AFD554BDC9 /* ImageLoader.swift */,
-				8E336D470FD47EFF5C04266603371FCF /* KinUI.swift */,
-				9155CEA622CB9C6B00A439E4 /* UILabel+Extensions.swift */,
-				84D78BCC65CBF922EC98457563EFF035 /* Pod */,
-				EACEAD4BFB8414370659FCB4D85FF597 /* Resources */,
-				45D9E27BFA6BBD350961D89B1A451314 /* Support Files */,
-			);
-			name = SendKin;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		84D78BCC65CBF922EC98457563EFF035 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				9B163C2937081C102F4811ACF827963C /* LICENSE */,
-				E0050BCF8C3C76960211FA5AE6D3246B /* README.md */,
-				61DB92A5074C35060E3D657D0F2DFC71 /* SendKin.podspec */,
-			);
-			name = Pod;
+			name = "Pods-SendKin-Sender";
+			path = "Target Support Files/Pods-SendKin-Sender";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -235,11 +258,29 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CEBB25E3303CEAA19BD2315C4BCEF6C7 /* Targets Support Files */ = {
+		C1876A6AEE0EBCA1718A8136CF095A9C /* Pods-send-kin-module-ios_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1654B1CF9DD77A9DB61B65524C6EF5AB /* Pods-send-kin-module-ios_Example */,
-				7D51E3E2F96EF1485BA076F6D210EE04 /* Pods-send-kin-module-ios_Tests */,
+				B326F082771A95DF7119ABC68C589991 /* Pods-send-kin-module-ios_Tests.modulemap */,
+				7910EB17356A1187A983F67144013DA0 /* Pods-send-kin-module-ios_Tests-acknowledgements.markdown */,
+				460F20625CB59C3B3FA2C008FB546B39 /* Pods-send-kin-module-ios_Tests-acknowledgements.plist */,
+				971200427D92D80630EE52311EEC9CCB /* Pods-send-kin-module-ios_Tests-dummy.m */,
+				F643F6CFB5FDC671B375D8448AFAF839 /* Pods-send-kin-module-ios_Tests-frameworks.sh */,
+				2A8FACC42A0A4F0005E0A516A424AAD5 /* Pods-send-kin-module-ios_Tests-Info.plist */,
+				8D31BC81861063806FF11EA0C3C63D07 /* Pods-send-kin-module-ios_Tests-umbrella.h */,
+				AC23705639E281C25D26507EFB2CDF9B /* Pods-send-kin-module-ios_Tests.debug.xcconfig */,
+				8C68B9D3571DDE7546F61FC107F9823A /* Pods-send-kin-module-ios_Tests.release.xcconfig */,
+			);
+			name = "Pods-send-kin-module-ios_Tests";
+			path = "Target Support Files/Pods-send-kin-module-ios_Tests";
+			sourceTree = "<group>";
+		};
+		C60E4EF58C4A848CE709906EFFECFE5F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1876A6AEE0EBCA1718A8136CF095A9C /* Pods-send-kin-module-ios_Tests */,
+				4042FE00F7543DF9EA1F56D59318E60A /* Pods-SendKin-Receiver */,
+				9BEB8C0195FD4979B07EC09DB6B64EA4 /* Pods-SendKin-Sender */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -248,10 +289,10 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				49378C07A3471C34FA056B0A4A6BEAE2 /* Development Pods */,
+				0D1ED07FF65E31960C07218D3207BEB2 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				4F624C2CA19B367EBD5376B8CF612980 /* Products */,
-				CEBB25E3303CEAA19BD2315C4BCEF6C7 /* Targets Support Files */,
+				4D47614BEF5D9EB3B90CC2170780645F /* Products */,
+				C60E4EF58C4A848CE709906EFFECFE5F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -263,52 +304,121 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EACEAD4BFB8414370659FCB4D85FF597 /* Resources */ = {
+		EED4AC6462239C4E8E4D2C5D0FB04131 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D4C424F50A2CC7D88F210DCF1EE2B0F7 /* Sailec.otf */,
-				230D65B6FF4D9658AB911DE33E66A7DA /* Sailec-Medium.otf */,
+				33E982FE6EFAC7D9C3F89AFCA808036A /* Sailec.otf */,
+				2C2319A6C9BC63A3C7CECC6B8D29C8A5 /* Sailec-Medium.otf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		FEF647B13320B8BE0EC055E709CF5CCF /* SendKin */ = {
+			isa = PBXGroup;
+			children = (
+				CF8C8087612711DD00EC8E66747694E0 /* App.swift */,
+				C0605605BF7BAF9A5B1AE7FC3F873335 /* AppCell.swift */,
+				1DA44FF82B62A50DDAB2C080ED5E2080 /* AppListViewController.swift */,
+				E7E8BB6FA376D9D7EBBB38793E539E02 /* AppsController.swift */,
+				9E1ED108C230FE59B3A58B73064F4DA1 /* Bundle+Extensions.swift */,
+				08859AEC45A3FA8A500A036172E28E69 /* Constants.swift */,
+				F8D345A0D616E5C143D1D143E7210B00 /* GetAddressFlow.swift */,
+				1340FBAF19E97FA2E599C613A985C5D8 /* ImageLoader.swift */,
+				B667C42FB664FD6E162A41AFB32F6869 /* KinUI.swift */,
+				AFC81E6CDECD72B680305E4ACE91B86E /* LaunchURLBuilder.swift */,
+				4D1C242A60B8FDDE20BD15A2B57B13E4 /* SendKinTypes.swift */,
+				C67B6E108C939951B3210B6A80818706 /* UILabel+Extensions.swift */,
+				3A4846298E00698274D544236F3142E5 /* Pod */,
+				EED4AC6462239C4E8E4D2C5D0FB04131 /* Resources */,
+				1DCADFB8E16269BE51A0221ECA1C0F21 /* Support Files */,
+			);
+			name = SendKin;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		84A3FE370CBEA67CA5BA2EF8773DBE91 /* Headers */ = {
+		1B07AF9F3E6DB53B3BCCE61FE45A7EF9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B41BCEFE4D2BCB5D52CCDD96B519045 /* Pods-send-kin-module-ios_Tests-umbrella.h in Headers */,
+				FA3E136D6FFEF057365FF2AEA29309F3 /* Pods-SendKin-Receiver-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E9B75E3AED4A7737E71BF54F9F01126 /* Headers */ = {
+		73472CD24C0DFB038E658EF963956F5F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E05C3E886F659E8B133B414D58C98EEA /* SendKin-umbrella.h in Headers */,
+				6B1827A4B5285CD4FB192A320C6EBDD5 /* Pods-SendKin-Sender-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9ED63C384D2114018095581D6842ABB9 /* Headers */ = {
+		7AE4770EFA75928438AD310A20DA4DC9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29C5F99674CE7C579B617AECBE09EC0B /* Pods-send-kin-module-ios_Example-umbrella.h in Headers */,
+				93C690AA82C95B2F45F2030EBCB485A3 /* Pods-send-kin-module-ios_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C2D37AD9B2C98049A63FC37B4752F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E5579E72D307D5CAB1B77F556511FB9 /* SendKin-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		41794303D005C5A74A3A2AE1B1523A71 /* Pods-SendKin-Receiver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D75818CF2ECC30C04296FA245687D237 /* Build configuration list for PBXNativeTarget "Pods-SendKin-Receiver" */;
+			buildPhases = (
+				1B07AF9F3E6DB53B3BCCE61FE45A7EF9 /* Headers */,
+				EDC23762B0B989AFE142280B7D9480C0 /* Sources */,
+				EF7943F48884894D39538A347B834914 /* Frameworks */,
+				3129E57836DC5ABBB4354CC1C27FE105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D5E723C8E43FE44BE42FA37111AF256 /* PBXTargetDependency */,
+			);
+			name = "Pods-SendKin-Receiver";
+			productName = "Pods-SendKin-Receiver";
+			productReference = 0FA4F9505DF3A5AECADBFF2015383476 /* Pods_SendKin_Receiver.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		68BB4C313CECFF1E382C5E7D5F1AED71 /* Pods-SendKin-Sender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D934C9238C4EF5E126A087C51C970F2 /* Build configuration list for PBXNativeTarget "Pods-SendKin-Sender" */;
+			buildPhases = (
+				73472CD24C0DFB038E658EF963956F5F /* Headers */,
+				1AA42C6FEEA485C30E46D052A03EF4DB /* Sources */,
+				59B4EDC142BAB92C2AE053A7647CB3FB /* Frameworks */,
+				5FBCB8D9F596A521B562F379CB258C15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F8D0B092447030DEBE64E937207382D /* PBXTargetDependency */,
+			);
+			name = "Pods-SendKin-Sender";
+			productName = "Pods-SendKin-Sender";
+			productReference = E266ADF316446D7322B9DC36659FB452 /* Pods_SendKin_Sender.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		71E3AC17D3210DCC6C46D83D2E0DC6AE /* SendKin-SendKin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33FBCE9C48422A0FA080B9F12F4805BE /* Build configuration list for PBXNativeTarget "SendKin-SendKin" */;
+			buildConfigurationList = 313AE3FD693DDA9C3C2C7C17B6B3B1FB /* Build configuration list for PBXNativeTarget "SendKin-SendKin" */;
 			buildPhases = (
-				18A25A10C983AFFAC705798F01106968 /* Sources */,
-				7CF873AF58BE869D76AEEEAA44EA7A45 /* Frameworks */,
-				F7C3F439D37F577144E0179C1AC2C413 /* Resources */,
+				CE8CCB7D4376FEA428E59B0F9F1BD9C5 /* Sources */,
+				51EF582A560D56FFA784406DBA0A01C9 /* Frameworks */,
+				1A894C0CB158E0BFFC61624BA6E83870 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -319,38 +429,19 @@
 			productReference = A74C206B1CA38D3ED9E8D35CFD77595D /* SendKin.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		D651EB1691100FD1EEA7D4C2CC509CA1 /* Pods-send-kin-module-ios_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6E19599F082E6E0ADE1B5E6529AB830E /* Build configuration list for PBXNativeTarget "Pods-send-kin-module-ios_Example" */;
-			buildPhases = (
-				9ED63C384D2114018095581D6842ABB9 /* Headers */,
-				40436BAC8F941F8E778FCD55489F542C /* Sources */,
-				FBA11FC603081D15A041F9680B92792A /* Frameworks */,
-				5C3A0E7A3FE43BC7C0F0AE1095B093B9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AB28667907C6FC2798F69486700CD925 /* PBXTargetDependency */,
-			);
-			name = "Pods-send-kin-module-ios_Example";
-			productName = "Pods-send-kin-module-ios_Example";
-			productReference = 2132FED5E1DF64A5701AB5E78720CF2A /* Pods_send_kin_module_ios_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		DB3A8779D036296265D49249FBF4B7F6 /* Pods-send-kin-module-ios_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14F529871ECC65B389ECA7FC802B7D17 /* Build configuration list for PBXNativeTarget "Pods-send-kin-module-ios_Tests" */;
+			buildConfigurationList = D53AFFFF41C19308AB273B84E83ED19D /* Build configuration list for PBXNativeTarget "Pods-send-kin-module-ios_Tests" */;
 			buildPhases = (
-				84A3FE370CBEA67CA5BA2EF8773DBE91 /* Headers */,
-				8DCBDDCB6E7482B6673BBCBB03ED4E04 /* Sources */,
-				7952706D05617D868BFEF2559A549F1F /* Frameworks */,
-				109623336EA46A5BA4E4910BF27A381A /* Resources */,
+				7AE4770EFA75928438AD310A20DA4DC9 /* Headers */,
+				74A1D6875156AA4D57AA5BCE2D461F47 /* Sources */,
+				2DE4FC43E45F92AD24F7C1BE8644CDD4 /* Frameworks */,
+				3018635178ADB46A6ED2C47DDBECBFCE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3A27FF10ABC8AD4A24D24FC3D42C4AC1 /* PBXTargetDependency */,
+				FF1E9F02B94CB30499F95B9D080CEB96 /* PBXTargetDependency */,
 			);
 			name = "Pods-send-kin-module-ios_Tests";
 			productName = "Pods-send-kin-module-ios_Tests";
@@ -359,17 +450,17 @@
 		};
 		E52FE53807EFBE381F512A8E28AD6024 /* SendKin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ACA07604820897B4B05CBF4498E18FE9 /* Build configuration list for PBXNativeTarget "SendKin" */;
+			buildConfigurationList = A545CF1D2E15C70C72D9B295A0F4B502 /* Build configuration list for PBXNativeTarget "SendKin" */;
 			buildPhases = (
-				8E9B75E3AED4A7737E71BF54F9F01126 /* Headers */,
-				F23F53464FEF52E906DE94CB9DCEEEAB /* Sources */,
-				4E066B5AA95A29F4A083DD19537FCE0F /* Frameworks */,
-				2D15FC9D5A50322726570AFD96486BAD /* Resources */,
+				95C2D37AD9B2C98049A63FC37B4752F8 /* Headers */,
+				738FB07FB86E7C4DBECDF046E729A721 /* Sources */,
+				E7624C07BCD77C0B808ACF7983688798 /* Frameworks */,
+				765AFC82C3DF14F5C9B0319544B4C900 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6AD38BD7D1B404B9A9364AD4AE8A356E /* PBXTargetDependency */,
+				0A01C695A6F523B7E1DE6515E6CF3A97 /* PBXTargetDependency */,
 			);
 			name = SendKin;
 			productName = SendKin;
@@ -384,11 +475,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
-				TargetAttributes = {
-					D651EB1691100FD1EEA7D4C2CC509CA1 = {
-						LastSwiftMigration = 1020;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -398,12 +484,13 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 4F624C2CA19B367EBD5376B8CF612980 /* Products */;
+			productRefGroup = 4D47614BEF5D9EB3B90CC2170780645F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D651EB1691100FD1EEA7D4C2CC509CA1 /* Pods-send-kin-module-ios_Example */,
 				DB3A8779D036296265D49249FBF4B7F6 /* Pods-send-kin-module-ios_Tests */,
+				41794303D005C5A74A3A2AE1B1523A71 /* Pods-SendKin-Receiver */,
+				68BB4C313CECFF1E382C5E7D5F1AED71 /* Pods-SendKin-Sender */,
 				E52FE53807EFBE381F512A8E28AD6024 /* SendKin */,
 				71E3AC17D3210DCC6C46D83D2E0DC6AE /* SendKin-SendKin */,
 			);
@@ -411,106 +498,133 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		109623336EA46A5BA4E4910BF27A381A /* Resources */ = {
+		1A894C0CB158E0BFFC61624BA6E83870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A922EE87E1B2DEBD881883F4BF75592C /* Sailec-Medium.otf in Resources */,
+				FAB6CDC3FD2D1DEBE11847C13597AF78 /* Sailec.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3018635178ADB46A6ED2C47DDBECBFCE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D15FC9D5A50322726570AFD96486BAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2E19D580CB84977E9C42D614C1A8A0A6 /* SendKin.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C3A0E7A3FE43BC7C0F0AE1095B093B9 /* Resources */ = {
+		3129E57836DC5ABBB4354CC1C27FE105 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7C3F439D37F577144E0179C1AC2C413 /* Resources */ = {
+		5FBCB8D9F596A521B562F379CB258C15 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A19459F44648DC62DBB73C84775BF2BC /* Sailec-Medium.otf in Resources */,
-				08F02788151FB889A4EFD92E718CAEE0 /* Sailec.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		765AFC82C3DF14F5C9B0319544B4C900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993B56AF6F8FD9A86BC47BF09E00F693 /* SendKin.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		18A25A10C983AFFAC705798F01106968 /* Sources */ = {
+		1AA42C6FEEA485C30E46D052A03EF4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				466E1482AC5948C51B83813E0CAA2319 /* Pods-SendKin-Sender-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		738FB07FB86E7C4DBECDF046E729A721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D993CBDD24320BEECDC412910AB998 /* App.swift in Sources */,
+				FB1527D8DBECD7BA26403CB6D1371540 /* AppCell.swift in Sources */,
+				BF0D45C1571E3FDF99592636FE7F8644 /* AppListViewController.swift in Sources */,
+				9A2DCCB382C2134CAC108CE888821706 /* AppsController.swift in Sources */,
+				F155C6D340B4BB0F43F2CC979CC32C21 /* Bundle+Extensions.swift in Sources */,
+				E174C36DE17C533F98AB620123660408 /* Constants.swift in Sources */,
+				554565356CA7BD97572CA5D78DB7726F /* GetAddressFlow.swift in Sources */,
+				4B5BC9C1E3EE5CD64F558FB46BE38A0A /* ImageLoader.swift in Sources */,
+				CBF93134C9913A9F1A0195237DD44ED9 /* KinUI.swift in Sources */,
+				8F0E62E28928ED95B04BDBF402F2A51D /* LaunchURLBuilder.swift in Sources */,
+				FDF129824ADB5CF5B1FFB7BE2BC1F965 /* SendKin-dummy.m in Sources */,
+				E8405C7C19D84B35D21B6AA79F960E4B /* SendKinTypes.swift in Sources */,
+				18467AAC16B9B35AFFDB728D34D8F3C1 /* UILabel+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74A1D6875156AA4D57AA5BCE2D461F47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE89FFFE7F4817A0A01A22B49E7AF124 /* Pods-send-kin-module-ios_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8CCB7D4376FEA428E59B0F9F1BD9C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40436BAC8F941F8E778FCD55489F542C /* Sources */ = {
+		EDC23762B0B989AFE142280B7D9480C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C841372F8A50AAF7DD6A194E1391D3DA /* Pods-send-kin-module-ios_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8DCBDDCB6E7482B6673BBCBB03ED4E04 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DBDBE347CCAC19933FAEA7BF9186460A /* Pods-send-kin-module-ios_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F23F53464FEF52E906DE94CB9DCEEEAB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0836560C3FE45694FA3DA4710E4EDF79 /* App.swift in Sources */,
-				712B60E30E8E08EA35419D3608E94D1F /* AppCell.swift in Sources */,
-				8D8188685A99A654E30ACDFC61617A55 /* AppListViewController.swift in Sources */,
-				9E2EBCE8425C794BC19D2C483CB2B520 /* AppsController.swift in Sources */,
-				9155CEA822CB9C7400A439E4 /* UILabel+Extensions.swift in Sources */,
-				20C2AB6B3318C2CF957B3856874740ED /* ImageLoader.swift in Sources */,
-				5A805AC9B2D1C859E2BADD19C16DBDDC /* KinUI.swift in Sources */,
-				5894DEE037063F71B74DC310E6883913 /* SendKin-dummy.m in Sources */,
+				FDAA710EB755E018439D5659FBF06C1D /* Pods-SendKin-Receiver-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3A27FF10ABC8AD4A24D24FC3D42C4AC1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-send-kin-module-ios_Example";
-			target = D651EB1691100FD1EEA7D4C2CC509CA1 /* Pods-send-kin-module-ios_Example */;
-			targetProxy = 62FDFA5E72A98C5D48E4E923E80283E2 /* PBXContainerItemProxy */;
-		};
-		6AD38BD7D1B404B9A9364AD4AE8A356E /* PBXTargetDependency */ = {
+		0A01C695A6F523B7E1DE6515E6CF3A97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SendKin-SendKin";
 			target = 71E3AC17D3210DCC6C46D83D2E0DC6AE /* SendKin-SendKin */;
-			targetProxy = B5B38D3013E47D1D98745775BCA1CD2D /* PBXContainerItemProxy */;
+			targetProxy = 46CFB0F88E54E48ED9EF0B4A029B5601 /* PBXContainerItemProxy */;
 		};
-		AB28667907C6FC2798F69486700CD925 /* PBXTargetDependency */ = {
+		0F8D0B092447030DEBE64E937207382D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SendKin;
 			target = E52FE53807EFBE381F512A8E28AD6024 /* SendKin */;
-			targetProxy = B8FD2504828F464717E4441E78754631 /* PBXContainerItemProxy */;
+			targetProxy = DD82E6994980B91AA0606427A7DC0625 /* PBXContainerItemProxy */;
+		};
+		4D5E723C8E43FE44BE42FA37111AF256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SendKin;
+			target = E52FE53807EFBE381F512A8E28AD6024 /* SendKin */;
+			targetProxy = 991B79D1E1FAE7CFB2A000AFCE90AF11 /* PBXContainerItemProxy */;
+		};
+		FF1E9F02B94CB30499F95B9D080CEB96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SendKin;
+			target = E52FE53807EFBE381F512A8E28AD6024 /* SendKin */;
+			targetProxy = 1DD4F31FA632F6DEFAD1A3BA5DEF5718 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01636074D029994F350DE610467C976C /* Debug */ = {
+		00D08B3EC2D194859C6D7E64DFAC960D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1542710BF79606017CB744CF963213B /* SendKin.xcconfig */;
+			baseConfigurationReference = CB723963A1B04933E8567484AE605D9A /* Pods-SendKin-Receiver.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -520,27 +634,29 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SendKin/SendKin-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SendKin/SendKin-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SendKin-Receiver/Pods-SendKin-Receiver-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SendKin/SendKin.modulemap";
-				PRODUCT_MODULE_NAME = SendKin;
-				PRODUCT_NAME = SendKin;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SendKin-Receiver/Pods-SendKin-Receiver.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		01C52B152C2BE947577900BF5174C124 /* Release */ = {
+		6B8A96368B3EE23CDB424D69CF1524AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1542710BF79606017CB744CF963213B /* SendKin.xcconfig */;
+			baseConfigurationReference = 094D770E793898A977E12B0242A66B98 /* SendKin.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -570,25 +686,9 @@
 			};
 			name = Release;
 		};
-		158DBB39EA0488F28B95DA5B7160364B /* Release */ = {
+		7C6DA5ACF1BBC5F0A9AC08FA31B8679A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1542710BF79606017CB744CF963213B /* SendKin.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SendKin";
-				INFOPLIST_FILE = "Target Support Files/SendKin/ResourceBundle-SendKin-SendKin-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = SendKin;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		65FFCE95300A44E5CA4523784A78E2BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 561E83DBCB7873C60886A76448EEAA5E /* Pods-send-kin-module-ios_Tests.debug.xcconfig */;
+			baseConfigurationReference = AC23705639E281C25D26507EFB2CDF9B /* Pods-send-kin-module-ios_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -619,25 +719,9 @@
 			};
 			name = Debug;
 		};
-		84A9F9B331BBCF94CE60D3789BEBA860 /* Debug */ = {
+		A5BE99453034763DA330C777A0F226CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1542710BF79606017CB744CF963213B /* SendKin.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SendKin";
-				INFOPLIST_FILE = "Target Support Files/SendKin/ResourceBundle-SendKin-SendKin-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = SendKin;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		8F85F1889753682DC1CF32E3D9E1BAED /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D989E224988600CC8389506F44A6F38F /* Pods-send-kin-module-ios_Tests.release.xcconfig */;
+			baseConfigurationReference = 4E951BE6269C79D66AA6887D32C03150 /* Pods-SendKin-Sender.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -649,12 +733,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-send-kin-module-ios_Tests/Pods-send-kin-module-ios_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SendKin-Sender/Pods-SendKin-Sender-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-send-kin-module-ios_Tests/Pods-send-kin-module-ios_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-SendKin-Sender/Pods-SendKin-Sender.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -722,11 +806,28 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		B50BA49C570C001ED4FA51A2A18165EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 094D770E793898A977E12B0242A66B98 /* SendKin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SendKin";
+				INFOPLIST_FILE = "Target Support Files/SendKin/ResourceBundle-SendKin-SendKin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = SendKin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
 		};
 		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -792,12 +893,11 @@
 			};
 			name = Debug;
 		};
-		E3479C73D20092AB54DEDBCEEC446E94 /* Debug */ = {
+		CDECDB90513BDD72AF08E905F848DBDA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D57936F204A0CA6957D2377227EA895 /* Pods-send-kin-module-ios_Example.debug.xcconfig */;
+			baseConfigurationReference = FE8F09610259EF14731B740F8DE466D2 /* Pods-SendKin-Receiver.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -807,12 +907,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-send-kin-module-ios_Example/Pods-send-kin-module-ios_Example-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SendKin-Receiver/Pods-SendKin-Receiver-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-send-kin-module-ios_Example/Pods-send-kin-module-ios_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-SendKin-Receiver/Pods-SendKin-Receiver.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -820,20 +920,17 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		E84DEB2FBFE3063CF1508CA222B82DBA /* Release */ = {
+		E63DEBB0D68F4D0C7441F90424B5236C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE7B59FE8BE9BDBB7AFC0012316B4113 /* Pods-send-kin-module-ios_Example.release.xcconfig */;
+			baseConfigurationReference = E5E909152BB93919DA3B6BFD52AFD310 /* Pods-SendKin-Sender.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -843,12 +940,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-send-kin-module-ios_Example/Pods-send-kin-module-ios_Example-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SendKin-Sender/Pods-SendKin-Sender-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-send-kin-module-ios_Example/Pods-send-kin-module-ios_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-SendKin-Sender/Pods-SendKin-Sender.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -856,7 +953,39 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E65AC8B25A5AE69D0874D1DBBF3B78B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C68B9D3571DDE7546F61FC107F9823A /* Pods-send-kin-module-ios_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-send-kin-module-ios_Tests/Pods-send-kin-module-ios_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-send-kin-module-ios_Tests/Pods-send-kin-module-ios_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -864,23 +993,61 @@
 			};
 			name = Release;
 		};
+		EE930D3A25D6F965BAE4A33A8D2A2DC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 094D770E793898A977E12B0242A66B98 /* SendKin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SendKin";
+				INFOPLIST_FILE = "Target Support Files/SendKin/ResourceBundle-SendKin-SendKin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = SendKin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F5929F65706917A83D66637EDDC5BCAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 094D770E793898A977E12B0242A66B98 /* SendKin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SendKin/SendKin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SendKin/SendKin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SendKin/SendKin.modulemap";
+				PRODUCT_MODULE_NAME = SendKin;
+				PRODUCT_NAME = SendKin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14F529871ECC65B389ECA7FC802B7D17 /* Build configuration list for PBXNativeTarget "Pods-send-kin-module-ios_Tests" */ = {
+		313AE3FD693DDA9C3C2C7C17B6B3B1FB /* Build configuration list for PBXNativeTarget "SendKin-SendKin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65FFCE95300A44E5CA4523784A78E2BE /* Debug */,
-				8F85F1889753682DC1CF32E3D9E1BAED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		33FBCE9C48422A0FA080B9F12F4805BE /* Build configuration list for PBXNativeTarget "SendKin-SendKin" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				84A9F9B331BBCF94CE60D3789BEBA860 /* Debug */,
-				158DBB39EA0488F28B95DA5B7160364B /* Release */,
+				B50BA49C570C001ED4FA51A2A18165EA /* Debug */,
+				EE930D3A25D6F965BAE4A33A8D2A2DC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -894,20 +1061,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E19599F082E6E0ADE1B5E6529AB830E /* Build configuration list for PBXNativeTarget "Pods-send-kin-module-ios_Example" */ = {
+		7D934C9238C4EF5E126A087C51C970F2 /* Build configuration list for PBXNativeTarget "Pods-SendKin-Sender" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E3479C73D20092AB54DEDBCEEC446E94 /* Debug */,
-				E84DEB2FBFE3063CF1508CA222B82DBA /* Release */,
+				E63DEBB0D68F4D0C7441F90424B5236C /* Debug */,
+				A5BE99453034763DA330C777A0F226CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACA07604820897B4B05CBF4498E18FE9 /* Build configuration list for PBXNativeTarget "SendKin" */ = {
+		A545CF1D2E15C70C72D9B295A0F4B502 /* Build configuration list for PBXNativeTarget "SendKin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				01636074D029994F350DE610467C976C /* Debug */,
-				01C52B152C2BE947577900BF5174C124 /* Release */,
+				F5929F65706917A83D66637EDDC5BCAC /* Debug */,
+				6B8A96368B3EE23CDB424D69CF1524AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D53AFFFF41C19308AB273B84E83ED19D /* Build configuration list for PBXNativeTarget "Pods-send-kin-module-ios_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C6DA5ACF1BBC5F0A9AC08FA31B8679A /* Debug */,
+				E65AC8B25A5AE69D0874D1DBBF3B78B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D75818CF2ECC30C04296FA245687D237 /* Build configuration list for PBXNativeTarget "Pods-SendKin-Receiver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDECDB90513BDD72AF08E905F848DBDA /* Debug */,
+				00D08B3EC2D194859C6D7E64DFAC960D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

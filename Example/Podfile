@@ -1,11 +1,17 @@
 use_frameworks!
 
-target 'send-kin-module-ios_Example' do
+def addSendKin
   pod 'SendKin', :path => '../'
+end
 
-  target 'send-kin-module-ios_Tests' do
-    inherit! :search_paths
+target 'SendKin-Sender' do
+  addSendKin
+end
 
+target 'SendKin-Receiver' do
+  addSendKin
+end
 
-  end
+target 'send-kin-module-ios_Tests' do
+  addSendKin
 end

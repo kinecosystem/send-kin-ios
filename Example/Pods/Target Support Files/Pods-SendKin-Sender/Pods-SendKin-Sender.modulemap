@@ -1,0 +1,6 @@
+framework module Pods_SendKin_Sender {
+  umbrella header "Pods-SendKin-Sender-umbrella.h"
+
+  export *
+  module * { export * }
+}

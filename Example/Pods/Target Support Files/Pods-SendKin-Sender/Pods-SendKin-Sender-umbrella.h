@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_send_kin_module_ios_ExampleVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_send_kin_module_ios_ExampleVersionString[];
+FOUNDATION_EXPORT double Pods_SendKin_SenderVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SendKin_SenderVersionString[];
 

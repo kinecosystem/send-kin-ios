@@ -8,8 +8,10 @@
 import UIKit
 
 public enum KinSendModule {
-    public static func show() {
-        let navigationController = UINavigationController(rootViewController: AppListViewController())
+    public static func start(with delegate: SendKinFlowDelegate) {
+        let appListViewController = AppListViewController()
+        appListViewController.sendKinDelegate = delegate
+        let navigationController = UINavigationController(rootViewController: appListViewController)
         navigationController.navigationBar.tintColor = KinUI.Colors.black
         navigationController.navigationBar.titleTextAttributes = [.foregroundColor: KinUI.Colors.black,
                                                                   .font: KinUI.Fonts.sailec(size: 18)]
@@ -25,6 +27,9 @@ extension UIViewController {
 
 class AppListViewController: UIViewController {
     let tableView = UITableView()
+    let getAddressFlow = GetAddressFlow()
+    weak var sendKinDelegate: SendKinFlowDelegate?
+
     var apps = [App]()
 
     override public func viewDidLoad() {
@@ -53,7 +58,6 @@ class AppListViewController: UIViewController {
         tableView.register(AppCell.self, forCellReuseIdentifier: AppCell.reuseIdentifier)
         tableView.register(UITableViewHeaderFooterView.self,
                            forHeaderFooterViewReuseIdentifier: "UITableViewHeaderFooterView")
-        tableView.allowsSelection = false
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = 76
@@ -82,6 +86,22 @@ extension AppListViewController: UITableViewDataSource {
 }
 
 extension AppListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        guard sendKinDelegate != nil else {
+            return
+        }
+
+        let app = apps[indexPath.row]
+        getAddressFlow.startMoveKinFlow(to: app) { result in
+            switch result {
+            case .cancelled: print("Cancelled")
+            case .success(let address): print("Got address: \(address)")
+            case .error(let error): print("Error: \(error)")
+            }
+        }
+    }
+
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "UITableViewHeaderFooterView") else {
             return nil
