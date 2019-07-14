@@ -55,7 +55,7 @@ class AppsController {
     }
 
     private func fetchAppsFromRemote(completion: @escaping (Result<[App], NetworkingError>) -> Void, currentVersion: Int? = nil) {
-        urlSession.dataTask(with: baseURL.appendingPathComponent("android.json")) { data, response, error in
+        urlSession.dataTask(with: baseURL.appendingPathComponent("iOS.json")) { data, response, error in
             func callCompletionOnMain(_ result: Result<[App], NetworkingError>) {
                 DispatchQueue.main.async {
                     completion(result)

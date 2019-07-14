@@ -8,7 +8,8 @@
 import Foundation
 
 public protocol SendKinFlowDelegate: class {
-    func sendKin(amount: UInt, to address: String, app: App, completion: @escaping (Bool) -> Void)
+    func sendKin(amount: UInt64, to address: String, app: App, completion: @escaping (Result<Void, Error>) -> Void)
+    var balance: UInt64 { get }
 }
 
 public protocol ReceiveKinFlowDelegate: class {

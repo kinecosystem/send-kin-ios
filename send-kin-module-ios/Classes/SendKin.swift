@@ -1,0 +1,53 @@
+//
+//  SendKin.swift
+//  SendKin
+//
+//  Created by Natan Rolnik on 07/07/19.
+//
+
+import UIKit
+
+public final class SendKin {
+    private let provideAddressFlow = ProvideAddressFlow()
+    private let getAddressFlow = GetAddressFlow()
+    public weak var delegate: SendKinFlowDelegate?
+
+    public init() {}
+
+    @objc private func start() {
+        guard let delegate = delegate else {
+            print("transferButton was used and tapped but no delegate (SendKinFlowDelegate) was set in SendKin")
+            return
+        }
+
+        let appListViewController = AppListViewController(getAddressFlow: getAddressFlow, sendKinDelegate: delegate)
+        let navigationController = UINavigationController(navigationBarClass: SendKinNavigationBar.self,
+                                                          toolbarClass: nil)
+        navigationController.viewControllers = [appListViewController]
+        UIApplication.shared.keyWindow?.rootViewController?.present(navigationController, animated: true)
+    }
+
+    public func canHandleURL(_ url: URL) -> Bool {
+        return provideAddressFlow.canHandleURL(url) || getAddressFlow.canHandleURL(url)
+    }
+
+    private lazy var _transferButton: UIButton = {
+        let b = TransferButton(type: .custom)
+        b.addTarget(self, action: #selector(start), for: .primaryActionTriggered)
+        return b
+    }()
+
+    public var transferButton: UIView {
+        return _transferButton
+    }
+
+    public func handleURL(_ url: URL,
+                   from appBundleId: String,
+                   receiveDelegate: ReceiveKinFlowDelegate) {
+        if provideAddressFlow.canHandleURL(url) {
+            provideAddressFlow.handleURL(url, from: appBundleId, receiveDelegate: receiveDelegate)
+        } else if getAddressFlow.canHandleURL(url) {
+            getAddressFlow.handleURL(url, from: appBundleId)
+        }
+    }
+}

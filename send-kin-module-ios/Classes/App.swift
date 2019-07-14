@@ -12,24 +12,20 @@ public struct App: Codable {
         let appName: String
         let url: URL
         let iconURL: URL
-        let urlScheme: String = ""
-        let bundleId: String = ""
 
         enum CodingKeys: String, CodingKey {
             case appName = "app_name"
             case url = "app_url"
             case iconURL = "icon_url"
-            case urlScheme = "url_scheme"
-            case bundleId = "bundle_id"
         }
     }
 
     struct TransferData: Codable {
-        let launchActivity: String
+        let urlScheme: String
         let sendEnabled: String?
 
         enum CodingKeys: String, CodingKey {
-            case launchActivity = "launch_activity"
+            case urlScheme = "url_scheme"
             case sendEnabled = "send_enabled"
         }
     }
@@ -54,12 +50,12 @@ extension App: Equatable {
 }
 
 extension App {
-    var urlScheme: String {
-        return "sendkin-receiver" //metadata.urlScheme
+    var urlScheme: String? {
+        return transferData?.urlScheme
     }
 
     var bundleId: String {
-        return "org.kinecosystem.kinReceiver" //metadata.bundleId
+        return identifier
     }
 
     var name: String {

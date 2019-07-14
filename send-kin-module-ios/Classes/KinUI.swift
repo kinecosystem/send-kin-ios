@@ -9,9 +9,12 @@ import UIKit
 
 public enum KinUI {
     enum Colors {
+        static let white = UIColor.white
         static let veryLightGray = UIColor(red: 0.97, green: 0.97, blue: 0.97, alpha: 1.00)
         static let gray = UIColor(red: 0.65, green: 0.65, blue: 0.65, alpha: 1.00)
+        static let darkGray = UIColor(red: 0.29, green: 0.29, blue: 0.29, alpha: 1.00)
         static let black = UIColor(red: 0.12, green: 0.12, blue: 0.12, alpha: 1.00)
+        static let purple = UIColor(red: 0.43, green: 0.26, blue: 0.91, alpha: 1.00)
     }
 
     enum Fonts {
@@ -21,6 +24,10 @@ public enum KinUI {
 
         static func sailecMedium(size: CGFloat) -> UIFont {
             return fontNamed("Sailec-Medium", fileExtension: "otf", family: "Sailec", size: size)
+        }
+
+        static func sailecBold(size: CGFloat) -> UIFont {
+            return fontNamed("Sailec-Bold", fileExtension: "otf", family: "Sailec", size: size)
         }
 
         static func kinK(size: CGFloat) -> UIFont {

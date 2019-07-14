@@ -31,7 +31,7 @@ class GetAddressFlow {
     init() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(appDidBecomeActive),
-                                               name: NSNotification.Name.UIApplicationDidBecomeActive,
+                                               name: UIApplication.didBecomeActiveNotification,
                                                object: nil)
     }
 

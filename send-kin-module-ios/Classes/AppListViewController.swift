@@ -7,18 +7,6 @@
 
 import UIKit
 
-public enum KinSendModule {
-    public static func start(with delegate: SendKinFlowDelegate) {
-        let appListViewController = AppListViewController()
-        appListViewController.sendKinDelegate = delegate
-        let navigationController = UINavigationController(rootViewController: appListViewController)
-        navigationController.navigationBar.tintColor = KinUI.Colors.black
-        navigationController.navigationBar.titleTextAttributes = [.foregroundColor: KinUI.Colors.black,
-                                                                  .font: KinUI.Fonts.sailec(size: 18)]
-        UIApplication.shared.keyWindow?.rootViewController?.present(navigationController, animated: true)
-    }
-}
-
 extension UIViewController {
     @objc func dismissAnimated() {
         dismiss(animated: true)
@@ -27,10 +15,22 @@ extension UIViewController {
 
 class AppListViewController: UIViewController {
     let tableView = UITableView()
-    let getAddressFlow = GetAddressFlow()
+    let getAddressFlow: GetAddressFlow
     weak var sendKinDelegate: SendKinFlowDelegate?
 
     var apps = [App]()
+    var thisAppIconURL: URL?
+
+    init(getAddressFlow: GetAddressFlow, sendKinDelegate: SendKinFlowDelegate) {
+        self.getAddressFlow = getAddressFlow
+        self.sendKinDelegate = sendKinDelegate
+
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -42,10 +42,13 @@ class AppListViewController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .stop,
                                                            target: self,
                                                            action: #selector(dismissAnimated))
+        let bundleId = Bundle.main.bundleIdentifier
         let appController = AppsController(baseURL: URL(string: "https://discover.kin.org")!)
         appController.getApps { [weak self] result in
             switch result {
-            case .success(let apps): self?.apps = apps
+            case .success(let apps):
+                self?.apps = apps.filter { $0.bundleId != bundleId }
+                self?.thisAppIconURL = apps.first(where: { $0.bundleId == bundleId })?.metadata.iconURL
             case .failure(let error): print(error)
             }
             self?.tableView.reloadData()
@@ -62,13 +65,25 @@ class AppListViewController: UIViewController {
         tableView.delegate = self
         tableView.rowHeight = 76
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(tableView)
-        NSLayoutConstraint.activate([
-            view.leadingAnchor.constraint(equalTo: tableView.leadingAnchor),
-            view.trailingAnchor.constraint(equalTo: tableView.trailingAnchor),
-            view.topAnchor.constraint(equalTo: tableView.topAnchor),
-            view.bottomAnchor.constraint(equalTo: tableView.bottomAnchor)
-        ])
+        tableView.tableFooterView = UIView()
+        view.addAndFit(tableView)
+    }
+
+    fileprivate func handleResult(_ result: GetAddressFlowTypes.Result, app: App) {
+        guard let delegate = sendKinDelegate else {
+            return
+        }
+
+        switch result {
+        case .cancelled: print("Cancelled")
+        case .success(let address):
+            let amountInput = SendKinInputViewController(destinationAddress: address,
+                                                         destinationApp: app,
+                                                         thisAppIconURL: thisAppIconURL,
+                                                         delegate: delegate)
+            navigationController?.viewControllers = [amountInput]
+        case .error(let error): print("Error: \(error)")
+        }
     }
 }
 
@@ -93,12 +108,8 @@ extension AppListViewController: UITableViewDelegate {
         }
 
         let app = apps[indexPath.row]
-        getAddressFlow.startMoveKinFlow(to: app) { result in
-            switch result {
-            case .cancelled: print("Cancelled")
-            case .success(let address): print("Got address: \(address)")
-            case .error(let error): print("Error: \(error)")
-            }
+        getAddressFlow.startMoveKinFlow(to: app) { [weak self] result in
+            self?.handleResult(result, app: app)
         }
     }
 

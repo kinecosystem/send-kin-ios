@@ -17,24 +17,29 @@ class ViewController: UIViewController {
     }
 
     func setupSendKin() {
-        let button = UIButton(type: .system)
-        button.setTitle("Transfer Kin", for: .normal)
+        sendKin.delegate = self
+        let button = sendKin.transferButton
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(startSendKin), for: .primaryActionTriggered)
         view.addSubview(button)
         view.centerXAnchor.constraint(equalTo: button.centerXAnchor).isActive = true
         view.centerYAnchor.constraint(equalTo: button.centerYAnchor).isActive = true
     }
-
-    @objc func startSendKin() {
-        KinSendModule.start(with: self)
-    }
 }
 
 extension ViewController: SendKinFlowDelegate {
-    func sendKin(amount: UInt, to address: String, app: App, completion: @escaping (Bool) -> Void) {
+    func sendKin(amount: UInt64, to address: String, app: App, completion: @escaping (Result<Void, Error>) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-            completion(true)
+            if Int.random(in: 0...100) < 10 {
+                completion(.success(()))
+            } else {
+                enum AnyError: Error { case some }
+                completion(.failure(AnyError.some))
+            }
+
         }
+    }
+
+    var balance: UInt64 {
+        return 2500
     }
 }
