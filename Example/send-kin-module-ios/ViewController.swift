@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: SendKinFlowDelegate {
-    func sendKin(amount: UInt64, to address: String, app: App, completion: @escaping (Result<Void, Error>) -> Void) {
+    func sendKin(amount: UInt64, to address: String, memo: String, completion: @escaping (Result<Void, Error>) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             if Int.random(in: 0...100) < 10 {
                 completion(.success(()))

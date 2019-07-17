@@ -32,15 +32,16 @@ class ProvideAddressFlow {
     }
 
     func handleURL(_ url: URL,
-                          from appBundleId: String,
-                          receiveDelegate: ReceiveKinFlowDelegate) {
+                   from appBundleId: String,
+                   receiveDelegate: ReceiveKinFlowDelegate) {
         guard url.host == Constants.urlHost, url.path == Constants.requestAddressURLPath else {
             return
         }
 
         guard let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false),
             let queryItems = urlComponents.queryItems,
-            let appURLScheme = queryItems.first(where: { $0.name == Constants.callerAppURLSchemeQueryItem })?.value else {
+            let appURLScheme = queryItems.first(where: { $0.name == Constants.callerAppURLSchemeQueryItem })?.value,
+            let memo = queryItems.first(where: { $0.name == Constants.callerAppFutureMemoQueryItem })?.value else {
                 return
         }
 
@@ -55,6 +56,8 @@ class ProvideAddressFlow {
                 }
                 return
         }
+
+        receiveDelegate.handlePossibleIncomingTransaction(with: memo)
 
         let viewController = AcceptReceiveKinViewController()
         viewController.appName = appName

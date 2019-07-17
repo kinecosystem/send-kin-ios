@@ -19,7 +19,7 @@ class AppListViewController: UIViewController {
     weak var sendKinDelegate: SendKinFlowDelegate?
 
     var apps = [App]()
-    var thisAppIconURL: URL?
+    var thisApp: App?
 
     init(getAddressFlow: GetAddressFlow, sendKinDelegate: SendKinFlowDelegate) {
         self.getAddressFlow = getAddressFlow
@@ -48,7 +48,7 @@ class AppListViewController: UIViewController {
             switch result {
             case .success(let apps):
                 self?.apps = apps.filter { $0.bundleId != bundleId }
-                self?.thisAppIconURL = apps.first(where: { $0.bundleId == bundleId })?.metadata.iconURL
+                self?.thisApp = apps.first(where: { $0.bundleId == bundleId })
             case .failure(let error): print(error)
             }
             self?.tableView.reloadData()
@@ -69,7 +69,7 @@ class AppListViewController: UIViewController {
         view.addAndFit(tableView)
     }
 
-    fileprivate func handleResult(_ result: GetAddressFlowTypes.Result, app: App) {
+    fileprivate func handleResult(_ result: GetAddressFlowTypes.Result, app: App, memo: String) {
         guard let delegate = sendKinDelegate else {
             return
         }
@@ -78,8 +78,9 @@ class AppListViewController: UIViewController {
         case .cancelled: print("Cancelled")
         case .success(let address):
             let amountInput = SendKinInputViewController(destinationAddress: address,
+                                                         memo: memo,
                                                          destinationApp: app,
-                                                         thisAppIconURL: thisAppIconURL,
+                                                         thisAppIconURL: thisApp?.metadata.iconURL,
                                                          delegate: delegate)
             navigationController?.viewControllers = [amountInput]
         case .error(let error):
@@ -118,9 +119,18 @@ extension AppListViewController: UITableViewDelegate {
             return
         }
 
-        let app = apps[indexPath.row]
-        getAddressFlow.startMoveKinFlow(to: app) { [weak self] result in
-            self?.handleResult(result, app: app)
+        let destinationApp = apps[indexPath.row]
+        let memoExcludingSender = destinationApp.newMemoForTransaction()
+
+        guard let thisAppMemoPrefix = thisApp?.memo else {
+            print("This app is not registered in the apps list JSON. Contact Kin to include your app in the list.")
+            return
+        }
+
+        let memoIncludingSender = "1-\(thisAppMemoPrefix)-\(memoExcludingSender)"
+
+        getAddressFlow.startMoveKinFlow(to: destinationApp, memo: memoIncludingSender) { [weak self] result in
+            self?.handleResult(result, app: destinationApp, memo: memoExcludingSender)
         }
     }
 

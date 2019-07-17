@@ -50,6 +50,14 @@ extension App: Equatable {
 }
 
 extension App {
+    func newMemoForTransaction() -> String {
+        let uuid = UUID().uuidString.replacingOccurrences(of: "-", with: "")
+        let result = "xapp_\(memo)_\(uuid)"
+        let toDrop = result.count - 21
+
+        return String(result.dropLast(toDrop))
+    }
+
     var urlScheme: String? {
         return transferData?.urlScheme
     }

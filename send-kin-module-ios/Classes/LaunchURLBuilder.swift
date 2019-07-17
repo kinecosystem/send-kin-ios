@@ -8,7 +8,7 @@
 import Foundation
 
 class LaunchURLBuilder {
-    static func requestAddressURL(for app: App) -> URL? {
+    static func requestAddressURL(for app: App, memo: String) -> URL? {
         guard let urlScheme = app.urlScheme, !urlScheme.isEmpty else {
             return nil
         }
@@ -25,7 +25,8 @@ class LaunchURLBuilder {
 
         var components = URLComponents.moveKin(scheme: urlScheme, path: Constants.requestAddressURLPath)
         components.queryItems = [URLQueryItem(name: Constants.callerAppNameQueryItem, value: Bundle.appName),
-                                 URLQueryItem(name: Constants.callerAppURLSchemeQueryItem, value: appURLScheme)]
+                                 URLQueryItem(name: Constants.callerAppURLSchemeQueryItem, value: appURLScheme),
+                                 URLQueryItem(name: Constants.callerAppFutureMemoQueryItem, value: memo)]
 
         return components.url
     }

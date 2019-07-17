@@ -10,6 +10,7 @@ import UIKit
 class SendKinInputViewController: UIViewController {
     weak var delegate: SendKinFlowDelegate?
     let destinationAddress: String
+    let memo: String
     let amountViewController = KinAmountInputViewController()
     let actionBar = KinInputActionBar(title: "Transfer Kin")
     let currentBalance: UInt64
@@ -28,8 +29,9 @@ class SendKinInputViewController: UIViewController {
         $0.size = .small
     }
 
-    init(destinationAddress: String, destinationApp: App, thisAppIconURL: URL?, delegate: SendKinFlowDelegate) {
+    init(destinationAddress: String, memo: String, destinationApp: App, thisAppIconURL: URL?, delegate: SendKinFlowDelegate) {
         self.destinationAddress = destinationAddress
+        self.memo = memo
         self.destinationApp = destinationApp
         self.delegate = delegate
         self.thisAppIconURL = thisAppIconURL
@@ -178,7 +180,7 @@ extension SendKinInputViewController: KinInputActionBarDelegate {
         progressView.translatesAutoresizingMaskIntoConstraints = false
         addAndAnimateView(progressView)
 
-        delegate?.sendKin(amount: amount, to: destinationAddress, app: destinationApp) { [weak self] result in
+        delegate?.sendKin(amount: amount, to: destinationAddress, memo: memo) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success: self?.transferSucceeded(amount: amount)

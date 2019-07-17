@@ -37,6 +37,12 @@ extension UIViewController {
 }
 
 extension AppDelegate: ReceiveKinFlowDelegate {
+    func handlePossibleIncomingTransaction(with memo: String) {
+        //here, your app should let your server know that a possible
+        //incoming transaction might happen, so transaction history
+        //gets updated accordingly
+    }
+
     func provideUserAddress(addressHandler: @escaping (String?) -> Void) {
         addressHandler("somelongstringhere!")
     }

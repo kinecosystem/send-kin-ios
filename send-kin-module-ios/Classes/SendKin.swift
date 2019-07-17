@@ -14,7 +14,12 @@ public final class SendKin {
 
     public init() {}
 
-    @objc private func start() {
+    public func start(delegate: SendKinFlowDelegate) {
+        self.delegate = delegate
+        _start()
+    }
+
+    @objc private func _start() {
         guard let delegate = delegate else {
             print("transferButton was used and tapped but no delegate (SendKinFlowDelegate) was set in SendKin")
             return
@@ -33,7 +38,7 @@ public final class SendKin {
 
     private lazy var _transferButton: UIButton = {
         let b = TransferButton(type: .custom)
-        b.addTarget(self, action: #selector(start), for: .primaryActionTriggered)
+        b.addTarget(self, action: #selector(_start), for: .primaryActionTriggered)
         return b
     }()
 

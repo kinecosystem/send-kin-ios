@@ -35,10 +35,10 @@ class GetAddressFlow {
                                                object: nil)
     }
 
-    func startMoveKinFlow(to destinationApp: App, completion: @escaping GetAddressFlowCompletion) {
+    func startMoveKinFlow(to destinationApp: App, memo: String, completion: @escaping GetAddressFlowCompletion) {
         self.completion = completion
 
-        guard let url = LaunchURLBuilder.requestAddressURL(for: destinationApp) else {
+        guard let url = LaunchURLBuilder.requestAddressURL(for: destinationApp, memo: memo) else {
             state = .error(.invalidURLScheme)
             return
         }
