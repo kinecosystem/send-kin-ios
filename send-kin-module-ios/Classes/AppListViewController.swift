@@ -82,8 +82,19 @@ class AppListViewController: UIViewController {
                                                          thisAppIconURL: thisAppIconURL,
                                                          delegate: delegate)
             navigationController?.viewControllers = [amountInput]
-        case .error(let error): print("Error: \(error)")
+        case .error(let error):
+            handleError(error.toSendKinFlowError, app: app)
         }
+    }
+
+    fileprivate func handleError(_ error: SendKinFlowError?, app: App) {
+        guard let error = error else {
+            return
+        }
+
+        let alertController = UIAlertController(title: "Error", message: error.errorMessage(for: app.name), preferredStyle: .alert)
+        alertController.addAction(.init(title: "Back", style: .default, handler: nil))
+        present(alertController, animated: true)
     }
 }
 

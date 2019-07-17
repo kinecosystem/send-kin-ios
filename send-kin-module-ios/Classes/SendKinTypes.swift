@@ -30,6 +30,7 @@ public struct GetAddressFlowTypes {
         case appLaunchFailed(App)
         case noAccount
         case bundleIdMismatch
+        case cancelled
         case invalidHandleURL
         case invalidLaunchParameters
         case invalidAddress
@@ -86,6 +87,44 @@ extension GetAddressFlowTypes.State {
             return .cancelled
         case .idle, .launchingApp, .waitingForAddress:
             return nil
+        }
+    }
+}
+
+enum SendKinFlowError {
+    case noWalletInDestination
+    case appNotInstalled
+    case couldNotEstablishConnection
+}
+
+extension SendKinFlowError {
+    func errorMessage(for appName: String) -> String {
+        switch self {
+        case .appNotInstalled:
+            return "In order to transfer Kin, \(appName) needs to be installed first."
+        case .noWalletInDestination:
+            return "To send Kin, first please log in to \(appName), then try again."
+        case .couldNotEstablishConnection:
+            return "We couldn't connect to \(appName). Please try again later."
+        }
+    }
+}
+
+extension GetAddressFlowTypes.Error {
+    var toSendKinFlowError: SendKinFlowError? {
+        switch self {
+        case .bundleIdMismatch,
+             .invalidAddress,
+             .invalidHandleURL,
+             .invalidLaunchParameters,
+             .invalidURLScheme,
+             .timeout:
+            return .couldNotEstablishConnection
+        case .noAccount:
+            return .noWalletInDestination
+        case .appLaunchFailed:
+            return .appNotInstalled
+        case .cancelled: return nil
         }
     }
 }
