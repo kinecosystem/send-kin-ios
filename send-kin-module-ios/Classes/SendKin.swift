@@ -19,9 +19,13 @@ public final class SendKin {
         _start()
     }
 
-    @objc private func _start() {
+    @objc private func _start(presenter: UIViewController? = nil) {
+        guard let rootViewController = UIApplication.shared.keyWindow?.rootViewController else {
+            return
+        }
+
         guard let delegate = delegate else {
-            print("transferButton was used and tapped but no delegate (SendKinFlowDelegate) was set in SendKin")
+            print("SendKin received start but no delegate (SendKinFlowDelegate) was set in SendKin")
             return
         }
 
@@ -29,7 +33,13 @@ public final class SendKin {
         let navigationController = UINavigationController(navigationBarClass: SendKinNavigationBar.self,
                                                           toolbarClass: nil)
         navigationController.viewControllers = [appListViewController]
-        UIApplication.shared.keyWindow?.rootViewController?.present(navigationController, animated: true)
+
+        var presenter = rootViewController
+        while let nextPresenter = presenter.presentedViewController {
+            presenter = nextPresenter
+        }
+
+        presenter.present(navigationController, animated: true)
     }
 
     public func canHandleURL(_ url: URL) -> Bool {

@@ -10,6 +10,7 @@ import Foundation
 public protocol SendKinFlowDelegate: class {
     func sendKin(amount: UInt64, to address: String, memo: String, completion: @escaping (Result<Void, Error>) -> Void)
     var balance: UInt64 { get }
+    var kinAppId: String { get }
 }
 
 public protocol ReceiveKinFlowDelegate: class {

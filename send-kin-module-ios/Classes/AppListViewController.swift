@@ -19,7 +19,7 @@ class AppListViewController: UIViewController {
     weak var sendKinDelegate: SendKinFlowDelegate?
 
     var apps = [App]()
-    var thisApp: App?
+    var thisAppIconURL: URL?
 
     init(getAddressFlow: GetAddressFlow, sendKinDelegate: SendKinFlowDelegate) {
         self.getAddressFlow = getAddressFlow
@@ -48,7 +48,7 @@ class AppListViewController: UIViewController {
             switch result {
             case .success(let apps):
                 self?.apps = apps.filter { $0.bundleId != bundleId }
-                self?.thisApp = apps.first(where: { $0.bundleId == bundleId })
+                self?.thisAppIconURL = apps.first(where: { $0.bundleId == bundleId })?.metadata.iconURL
             case .failure(let error): print(error)
             }
             self?.tableView.reloadData()
@@ -80,7 +80,7 @@ class AppListViewController: UIViewController {
             let amountInput = SendKinInputViewController(destinationAddress: address,
                                                          memo: memo,
                                                          destinationApp: app,
-                                                         thisAppIconURL: thisApp?.metadata.iconURL,
+                                                         thisAppIconURL: thisAppIconURL,
                                                          delegate: delegate)
             navigationController?.viewControllers = [amountInput]
         case .error(let error):
@@ -122,8 +122,9 @@ extension AppListViewController: UITableViewDelegate {
         let destinationApp = apps[indexPath.row]
         let memoExcludingSender = destinationApp.newMemoForTransaction()
 
-        guard let thisAppMemoPrefix = thisApp?.memo else {
-            print("This app is not registered in the apps list JSON. Contact Kin to include your app in the list.")
+        guard let thisAppMemoPrefix = sendKinDelegate?.kinAppId,
+          thisAppMemoPrefix.count == 4 else {
+            print("sendKinDelegate returned an invalid memo")
             return
         }
 
