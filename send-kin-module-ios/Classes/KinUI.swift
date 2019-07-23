@@ -8,6 +8,8 @@
 import UIKit
 
 public enum KinUI {
+    static let bundle = Bundle(for: UIBundleToken.self)
+
     enum Colors {
         static let white = UIColor.white
         static let veryLightGray = UIColor(red: 0.97, green: 0.97, blue: 0.97, alpha: 1.00)
@@ -19,24 +21,23 @@ public enum KinUI {
 
     enum Fonts {
         static func sailec(size: CGFloat) -> UIFont {
-            return fontNamed("Sailec", fileExtension: "otf", family: "Sailec", size: size)
+            return font(named: "Sailec", fileExtension: "otf", family: "Sailec", size: size)
         }
 
         static func sailecMedium(size: CGFloat) -> UIFont {
-            return fontNamed("Sailec-Medium", fileExtension: "otf", family: "Sailec", size: size)
+            return font(named: "Sailec-Medium", fileExtension: "otf", family: "Sailec", size: size)
         }
 
         static func sailecBold(size: CGFloat) -> UIFont {
-            return fontNamed("Sailec-Bold", fileExtension: "otf", family: "Sailec", size: size)
+            return font(named: "Sailec-Bold", fileExtension: "otf", family: "Sailec", size: size)
         }
 
         static func kinK(size: CGFloat) -> UIFont {
-            return fontNamed("Kin_k", fileExtension: "ttf", family: "Kin_k", size: size)
+            return font(named: "Kin_k", fileExtension: "ttf", family: "Kin_k", size: size)
         }
 
-        static private func fontNamed(_ name: String, fileExtension: String, family: String, size: CGFloat) -> UIFont {
+        static private func font(named name: String, fileExtension: String, family: String, size: CGFloat) -> UIFont {
             if !UIFont.fontNames(forFamilyName: family).contains(name) {
-                let bundle = Bundle(for: UIBundleToken.self)
                 let url = bundle
                     .bundleURL
                     .appendingPathComponent("SendKin.bundle")
@@ -46,6 +47,24 @@ public enum KinUI {
 
             return UIFont(name: name, size: size)!
         }
+    }
+
+    static func image(named name: String) -> UIImage? {
+        if let image = UIImage(named: name, in: bundle, compatibleWith: nil) {
+            return image
+        }
+
+        let url = bundle
+            .bundleURL
+            .appendingPathComponent("SendKin.bundle")
+
+        if
+            let rBundle = Bundle(url: url),
+            let image = UIImage(named: name, in: rBundle, compatibleWith: nil) {
+            return image
+        }
+
+        return nil
     }
 }
 

@@ -13,6 +13,7 @@ internal struct Constants {
     static let callerAppNameQueryItem = "appName"
     static let callerAppURLSchemeQueryItem = "urlScheme"
     static let callerAppFutureMemoQueryItem = "memo"
+    static let callerAppId = "appId"
 
     static let receiveAddressURLPath = "/receive-address"
     static let receiveAddressQueryItem = "address"

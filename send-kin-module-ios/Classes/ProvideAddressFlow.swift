@@ -40,13 +40,14 @@ class ProvideAddressFlow {
 
         guard let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false),
             let queryItems = urlComponents.queryItems,
-            let appURLScheme = queryItems.first(where: { $0.name == Constants.callerAppURLSchemeQueryItem })?.value,
-            let memo = queryItems.first(where: { $0.name == Constants.callerAppFutureMemoQueryItem })?.value else {
+            let appURLScheme = queryItems.first(where: { $0.name == Constants.callerAppURLSchemeQueryItem })?.value else {
                 return
         }
 
         guard
             let appName = queryItems.first(where: { $0.name == Constants.callerAppNameQueryItem })?.value,
+            let memo = queryItems.first(where: { $0.name == Constants.callerAppFutureMemoQueryItem })?.value,
+            let appId = queryItems.first(where: { $0.name == Constants.callerAppId })?.value,
             let presenter = presenter else {
                 let url = LaunchURLBuilder.provideAddressInvalidURL(urlScheme: appURLScheme)
                 if #available(iOS 10.0, *) {
@@ -57,7 +58,9 @@ class ProvideAddressFlow {
                 return
         }
 
-        receiveDelegate.handlePossibleIncomingTransaction(with: memo)
+        receiveDelegate.handlePossibleIncomingTransaction(senderAppName: appName,
+                                                          senderAppId: appId,
+                                                          memo: memo)
 
         let viewController = AcceptReceiveKinViewController()
         viewController.appName = appName

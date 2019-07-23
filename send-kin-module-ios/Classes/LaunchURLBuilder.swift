@@ -8,15 +8,17 @@
 import Foundation
 
 class LaunchURLBuilder {
-    static func requestAddressURL(for app: App, memo: String) -> URL? {
-        guard let urlScheme = app.urlScheme, !urlScheme.isEmpty else {
+    static func requestAddressURL(for destinationApp: App,
+                                  senderAppId: String,
+                                  memo: String) -> URL? {
+        guard let urlScheme = destinationApp.urlScheme, !urlScheme.isEmpty else {
             return nil
         }
 
         guard let appURLScheme = Bundle.firstAppURLScheme else {
             let message =
             """
-            MoveKin couldn't find a URL scheme to be used to launch this app back and receive data from \(app.name)".
+            MoveKin couldn't find a URL scheme to be used to launch this app back and receive data from \(destinationApp.name)".
             Add a URL scheme to this app's info.plist and try again.
             """
 
@@ -26,7 +28,8 @@ class LaunchURLBuilder {
         var components = URLComponents.moveKin(scheme: urlScheme, path: Constants.requestAddressURLPath)
         components.queryItems = [URLQueryItem(name: Constants.callerAppNameQueryItem, value: Bundle.appName),
                                  URLQueryItem(name: Constants.callerAppURLSchemeQueryItem, value: appURLScheme),
-                                 URLQueryItem(name: Constants.callerAppFutureMemoQueryItem, value: memo)]
+                                 URLQueryItem(name: Constants.callerAppFutureMemoQueryItem, value: memo),
+                                 URLQueryItem(name: Constants.callerAppId, value: senderAppId)]
 
         return components.url
     }

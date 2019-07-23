@@ -27,19 +27,22 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: SendKinFlowDelegate {
-    func sendKin(amount: UInt64, to address: String, memo: String, completion: @escaping (Result<Void, Error>) -> Void) {
+    func sendKin(amount: UInt64, to receiverAddress: String, receiverApp: App, memo: String, completion: @escaping (Result<Void, Error>) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-            if Int.random(in: 0...100) < 10 {
+            if Int.random(in: 0...100) < 60 {
                 completion(.success(()))
             } else {
                 enum AnyError: Error { case some }
                 completion(.failure(AnyError.some))
             }
-
         }
     }
 
     var balance: UInt64 {
         return 2500
+    }
+
+    var kinAppId: String {
+        return "sksd"
     }
 }

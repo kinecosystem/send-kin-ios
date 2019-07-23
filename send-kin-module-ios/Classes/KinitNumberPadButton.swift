@@ -24,13 +24,13 @@ struct KinitNumberPadButtonStyle {
     let disabledTextColor: UIColor
     let backspaceImage: UIImage
 
-    static let `default` = KinitNumberPadButtonStyle(buttonBackground: .image(UIImage(named: "NumberPadBackground", in: bundle, compatibleWith: nil)!),
+    static let `default` = KinitNumberPadButtonStyle(buttonBackground: .image(KinUI.image(named: "NumberPadBackground")!),
                                                      buttonBackgroundHighlighted: .color(.init(red: 0.43, green: 0.26, blue: 0.91, alpha: 1.00)),
                                                      font: KinUI.Fonts.sailecBold(size: 20),
                                                      textColor: .black,
                                                      highlightedTextColor: .white,
                                                      disabledTextColor: .lightGray,
-                                                     backspaceImage: UIImage(named: "NumberPadDelete", in: bundle, compatibleWith: nil)!)
+                                                     backspaceImage: KinUI.image(named: "NumberPadDelete")!)
 }
 
 enum KinitNumberPadKey {

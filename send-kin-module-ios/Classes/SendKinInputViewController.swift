@@ -180,7 +180,7 @@ extension SendKinInputViewController: KinInputActionBarDelegate {
         progressView.translatesAutoresizingMaskIntoConstraints = false
         addAndAnimateView(progressView)
 
-        delegate?.sendKin(amount: amount, to: destinationAddress, memo: memo) { [weak self] result in
+        delegate?.sendKin(amount: amount, to: destinationAddress, receiverApp: destinationApp, memo: memo) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success: self?.transferSucceeded(amount: amount)

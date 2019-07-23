@@ -8,7 +8,7 @@
 import Foundation
 
 public struct App: Codable {
-    struct Metadata: Codable {
+    public struct Metadata: Codable {
         let appName: String
         let url: URL
         let iconURL: URL
@@ -20,7 +20,7 @@ public struct App: Codable {
         }
     }
 
-    struct TransferData: Codable {
+    public struct TransferData: Codable {
         let urlScheme: String
         let sendEnabled: String?
 
@@ -30,8 +30,8 @@ public struct App: Codable {
         }
     }
 
-    let identifier: String
-    let memo: String
+    public let identifier: String
+    public let memo: String
     let metadata: Metadata
     let transferData: TransferData?
 
@@ -62,11 +62,11 @@ extension App {
         return transferData?.urlScheme
     }
 
-    var bundleId: String {
+    public var bundleId: String {
         return identifier
     }
 
-    var name: String {
+    public var name: String {
         return metadata.appName
     }
 }

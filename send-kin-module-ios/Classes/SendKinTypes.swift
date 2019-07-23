@@ -8,13 +8,13 @@
 import Foundation
 
 public protocol SendKinFlowDelegate: class {
-    func sendKin(amount: UInt64, to address: String, memo: String, completion: @escaping (Result<Void, Error>) -> Void)
+    func sendKin(amount: UInt64, to receiverAddress: String, receiverApp: App, memo: String, completion: @escaping (Result<Void, Error>) -> Void)
     var balance: UInt64 { get }
     var kinAppId: String { get }
 }
 
 public protocol ReceiveKinFlowDelegate: class {
-    func handlePossibleIncomingTransaction(with memo: String)
+    func handlePossibleIncomingTransaction(senderAppName: String, senderAppId: String, memo: String)
     func provideUserAddress(addressHandler: @escaping (String?) -> Void)
 }
 

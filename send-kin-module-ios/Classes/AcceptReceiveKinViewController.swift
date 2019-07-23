@@ -29,9 +29,7 @@ class AcceptReceiveKinViewController: UIViewController {
     }
 
     private func setupSubviews() {
-        let kinImageView = UIImageView(image: UIImage(named: "KinEcosystemLogo",
-                                                      in: Bundle(for: AcceptReceiveKinViewController.self),
-                                                      compatibleWith: nil))
+        let kinImageView = UIImageView(image: KinUI.image(named: "KinEcosystemLogo"))
         let text = "In order to transfer Kin, \(appName) would like to receive your Kin account information (i.e. your public address and user ID) from \(Bundle.appName ?? "this app")."
         let transferLabel = UILabel()
         transferLabel.textAlignment = .center

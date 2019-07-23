@@ -122,15 +122,15 @@ extension AppListViewController: UITableViewDelegate {
         let destinationApp = apps[indexPath.row]
         let memoExcludingSender = destinationApp.newMemoForTransaction()
 
-        guard let thisAppMemoPrefix = sendKinDelegate?.kinAppId,
-          thisAppMemoPrefix.count == 4 else {
+        guard let thisAppId = sendKinDelegate?.kinAppId,
+          thisAppId.count == 4 else {
             print("sendKinDelegate returned an invalid memo")
             return
         }
 
-        let memoIncludingSender = "1-\(thisAppMemoPrefix)-\(memoExcludingSender)"
+        let memoIncludingSender = "1-\(thisAppId)-\(memoExcludingSender)"
 
-        getAddressFlow.startMoveKinFlow(to: destinationApp, memo: memoIncludingSender) { [weak self] result in
+        getAddressFlow.startMoveKinFlow(to: destinationApp, senderAppId: thisAppId, memo: memoIncludingSender) { [weak self] result in
             self?.handleResult(result, app: destinationApp, memo: memoExcludingSender)
         }
     }

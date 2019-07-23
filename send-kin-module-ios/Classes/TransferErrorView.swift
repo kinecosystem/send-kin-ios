@@ -30,8 +30,7 @@ class TransferFailedView: UIView {
     }
 
     func setupSubviews() {
-        let errorImage = UIImage(named: "ErrorIcon", in: Bundle(for: SendKinDoneView.self), compatibleWith: nil)
-        let errorImageView = UIImageView(image: errorImage)
+        let errorImageView = UIImageView(image: KinUI.image(named: "ErrorIcon"))
         errorImageView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
 
         let label = UILabel()
@@ -44,7 +43,7 @@ class TransferFailedView: UIView {
         closeButton.addTarget(self, action: #selector(closeTapped), for: .primaryActionTriggered)
         closeButton.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         closeButton.tintColor = KinUI.Colors.white
-        let closeImage = UIImage(named: "CloseButton", in: Bundle(for: SendKinDoneView.self), compatibleWith: nil)?
+        let closeImage = KinUI.image(named: "CloseButton")?
             .withRenderingMode(.alwaysTemplate)
         closeButton.setImage(closeImage, for: .normal)
 
