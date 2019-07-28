@@ -17,32 +17,14 @@ class ViewController: UIViewController {
     }
 
     func setupSendKin() {
-        sendKin.delegate = self
-        let button = sendKin.transferButton
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+
+        let button = appDelegate.sendKin.transferButton
         button.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(button)
         view.centerXAnchor.constraint(equalTo: button.centerXAnchor).isActive = true
         view.centerYAnchor.constraint(equalTo: button.centerYAnchor).isActive = true
-    }
-}
-
-extension ViewController: SendKinFlowDelegate {
-    func sendKin(amount: UInt64, to receiverAddress: String, receiverApp: App, memo: String, completion: @escaping (Result<Void, Error>) -> Void) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-            if Int.random(in: 0...100) < 60 {
-                completion(.success(()))
-            } else {
-                enum AnyError: Error { case some }
-                completion(.failure(AnyError.some))
-            }
-        }
-    }
-
-    var balance: UInt64 {
-        return 2500
-    }
-
-    var kinAppId: String {
-        return "sksd"
     }
 }

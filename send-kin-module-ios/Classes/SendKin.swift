@@ -14,8 +14,7 @@ public final class SendKin {
 
     public init() {}
 
-    public func start(delegate: SendKinFlowDelegate) {
-        self.delegate = delegate
+    public func start() {
         _start()
     }
 

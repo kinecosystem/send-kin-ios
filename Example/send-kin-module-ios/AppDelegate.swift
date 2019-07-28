@@ -15,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let sendKin = SendKin()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        sendKin.delegate = self
+
         return true
     }
 
@@ -30,12 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-extension UIViewController {
-    var sendKin: SendKin {
-        return (UIApplication.shared.delegate as! AppDelegate).sendKin
-    }
-}
-
 extension AppDelegate: ReceiveKinFlowDelegate {
     func handlePossibleIncomingTransaction(senderAppName: String,
                                            senderAppId: String,
@@ -47,5 +42,28 @@ extension AppDelegate: ReceiveKinFlowDelegate {
 
     func provideUserAddress(addressHandler: @escaping (String?) -> Void) {
         addressHandler("GBI3QOSGYTHN7FJ724NGDB4CYFQO645HCZ7RZBWX5PFIA6SPJCXY26UF")
+    }
+}
+
+extension AppDelegate: SendKinFlowDelegate {
+    func sendKin(amount: UInt64, to receiverAddress: String, receiverApp: App, memo: String, completion: @escaping (Result<Void, Error>) -> Void) {
+        //Here, call
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            if Int.random(in: 0...10) < 8 {
+                completion(.success(()))
+            } else {
+                enum AnyError: Error { case some }
+                completion(.failure(AnyError.some))
+            }
+        }
+    }
+
+    var balance: UInt64 {
+        return 2500
+    }
+
+    var kinAppId: String {
+        return "sksd"
     }
 }
