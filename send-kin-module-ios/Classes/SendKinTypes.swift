@@ -94,13 +94,14 @@ extension GetAddressFlowTypes.State {
 }
 
 enum SendKinFlowError {
+    case cancelled
     case noWalletInDestination
     case appNotInstalled
     case couldNotEstablishConnection
 }
 
 extension SendKinFlowError {
-    func errorMessage(for appName: String) -> String {
+    func errorMessage(for appName: String) -> String? {
         switch self {
         case .appNotInstalled:
             return "In order to transfer Kin, \(appName) needs to be installed first."
@@ -108,6 +109,8 @@ extension SendKinFlowError {
             return "To send Kin, first please log in to \(appName), then try again."
         case .couldNotEstablishConnection:
             return "We couldn't connect to \(appName). Please try again later."
+        case .cancelled:
+            return nil
         }
     }
 }

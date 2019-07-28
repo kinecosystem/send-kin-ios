@@ -37,6 +37,7 @@
 		9137DBF822DB5E4300D784B2 /* TransferErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9137DBF722DB5E4200D784B2 /* TransferErrorView.swift */; };
 		9155CECA22CE18AD00A439E4 /* ProvideAddressFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155CEC922CE18AD00A439E4 /* ProvideAddressFlow.swift */; };
 		9155CECC22CE18D400A439E4 /* AcceptReceiveKinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9155CECB22CE18D400A439E4 /* AcceptReceiveKinViewController.swift */; };
+		91ED4CDC22E9D743009B4371 /* KinAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ED4CDB22E9D743009B4371 /* KinAlertController.swift */; };
 		93C690AA82C95B2F45F2030EBCB485A3 /* Pods-send-kin-module-ios_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D31BC81861063806FF11EA0C3C63D07 /* Pods-send-kin-module-ios_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		993B56AF6F8FD9A86BC47BF09E00F693 /* SendKin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A74C206B1CA38D3ED9E8D35CFD77595D /* SendKin.bundle */; };
 		9A2DCCB382C2134CAC108CE888821706 /* AppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E8BB6FA376D9D7EBBB38793E539E02 /* AppsController.swift */; };
@@ -137,6 +138,7 @@
 		9137DBF722DB5E4200D784B2 /* TransferErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransferErrorView.swift; path = "send-kin-module-ios/Classes/TransferErrorView.swift"; sourceTree = "<group>"; };
 		9155CEC922CE18AD00A439E4 /* ProvideAddressFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProvideAddressFlow.swift; path = "send-kin-module-ios/Classes/ProvideAddressFlow.swift"; sourceTree = "<group>"; };
 		9155CECB22CE18D400A439E4 /* AcceptReceiveKinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AcceptReceiveKinViewController.swift; path = "send-kin-module-ios/Classes/AcceptReceiveKinViewController.swift"; sourceTree = "<group>"; };
+		91ED4CDB22E9D743009B4371 /* KinAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KinAlertController.swift; path = "send-kin-module-ios/Classes/KinAlertController.swift"; sourceTree = "<group>"; };
 		971200427D92D80630EE52311EEC9CCB /* Pods-send-kin-module-ios_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-send-kin-module-ios_Tests-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E1ED108C230FE59B3A58B73064F4DA1 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extensions.swift"; path = "send-kin-module-ios/Classes/Bundle+Extensions.swift"; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 				9137D97A22D72A7800D784B2 /* SendKinInProgressView.swift */,
 				9137D97C22D73B3C00D784B2 /* SendKinDoneView.swift */,
 				9137DBF722DB5E4200D784B2 /* TransferErrorView.swift */,
+				91ED4CDB22E9D743009B4371 /* KinAlertController.swift */,
 				3A4846298E00698274D544236F3142E5 /* Pod */,
 				EED4AC6462239C4E8E4D2C5D0FB04131 /* Resources */,
 				1DCADFB8E16269BE51A0221ECA1C0F21 /* Support Files */,
@@ -636,6 +639,7 @@
 				554565356CA7BD97572CA5D78DB7726F /* GetAddressFlow.swift in Sources */,
 				9137938222D20AB800C07E76 /* SendKin.swift in Sources */,
 				4B5BC9C1E3EE5CD64F558FB46BE38A0A /* ImageLoader.swift in Sources */,
+				91ED4CDC22E9D743009B4371 /* KinAlertController.swift in Sources */,
 				CBF93134C9913A9F1A0195237DD44ED9 /* KinUI.swift in Sources */,
 				8F0E62E28928ED95B04BDBF402F2A51D /* LaunchURLBuilder.swift in Sources */,
 				FDF129824ADB5CF5B1FFB7BE2BC1F965 /* SendKin-dummy.m in Sources */,

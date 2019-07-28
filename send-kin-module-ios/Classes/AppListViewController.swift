@@ -89,12 +89,15 @@ class AppListViewController: UIViewController {
     }
 
     fileprivate func handleError(_ error: SendKinFlowError?, app: App) {
-        guard let error = error else {
+        guard
+            let error = error,
+            let errorMessage = error.errorMessage(for: app.name) else {
             return
         }
 
-        let alertController = UIAlertController(title: "Error", message: error.errorMessage(for: app.name), preferredStyle: .alert)
-        alertController.addAction(.init(title: "Back", style: .default, handler: nil))
+        let alertController = KinAlertController(title: "Error",
+                                                 message: errorMessage,
+                                                 action: .init(title: "Back"))
         present(alertController, animated: true)
     }
 }
