@@ -109,7 +109,7 @@ class SendKinInputViewController: UIViewController {
             ])
     }
 
-    fileprivate func addAndAnimateView(_ aView: UIView) {
+    fileprivate func addAndAnimateView(_ aView: UIView, completion: (() -> Void)? = nil) {
         view.addSubview(aView)
 
         actionBar.leadingAnchor.constraint(equalTo: aView.leadingAnchor).isActive = true
@@ -119,11 +119,13 @@ class SendKinInputViewController: UIViewController {
         topConstraint.isActive = true
         view.layoutIfNeeded()
 
-        UIView.animate(withDuration: 0.2) {
+        UIView.animate(withDuration: 0.2, animations: {
             topConstraint.isActive = false
             self.actionBar.topAnchor.constraint(equalTo: aView.topAnchor).isActive = true
             self.view.layoutIfNeeded()
-        }
+        }, completion: { _ in
+            completion?()
+        })
     }
 
     fileprivate func animateOutAndRemoveView(_ aView: UIView) {
@@ -151,7 +153,7 @@ class SendKinInputViewController: UIViewController {
     }
 
     fileprivate func transferFailed(error: Error) {
-        if let transferInProgressView = view.subviews.first(where: { $0 is SendKinInProgressView}) {
+        if let transferInProgressView = view.subviews.first(where: { $0 is SendKinInProgressView }) {
             animateOutAndRemoveView(transferInProgressView)
         }
 
@@ -178,7 +180,9 @@ extension SendKinInputViewController: KinInputActionBarDelegate {
                                                  destinationAppName: destinationApp.name,
                                                  amount: amount)
         progressView.translatesAutoresizingMaskIntoConstraints = false
-        addAndAnimateView(progressView)
+        addAndAnimateView(progressView) {
+            progressView.startAnimating()
+        }
 
         delegate?.sendKin(amount: amount, to: destinationAddress, receiverApp: destinationApp, memo: memo) { [weak self] result in
             DispatchQueue.main.async {
