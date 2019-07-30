@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SendKin'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Easily send Kin between apps'
   s.license          = { :type => 'Kin Ecosystem SDK License', :file => 'LICENSE.md' }
   s.author           = { 'Kin Foundation' => 'info@kin.org' }
